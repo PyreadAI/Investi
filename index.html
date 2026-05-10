@@ -1,0 +1,3379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LangHub · 合作融资意向书 · 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf6ec;
+      --bg-paper: #f5efde;
+      --bg-card: #fdfaf2;
+      --ink: #1a1715;
+      --ink-2: #3d3631;
+      --ink-3: #7a7065;
+      --ink-mute: #a89e8e;
+      --line: #d9cfb6;
+      --line-soft: #e8dfc7;
+      --gold: #b88a3f;
+      --gold-deep: #8c6325;
+      --crit: #dc2626;
+
+      --tk-val: #9f1239;
+      --tk-eng: #4338ca;
+      --tk-ai: #0d9488;
+      --tk-team: #7c3aed;
+      --tk-ops: #b45309;
+      --tk-comp: #475569;
+
+      --tk-val-bg: rgba(159, 18, 57, .07);
+      --tk-eng-bg: rgba(67, 56, 202, .06);
+      --tk-ai-bg: rgba(13, 148, 136, .06);
+      --tk-team-bg: rgba(124, 58, 237, .06);
+      --tk-ops-bg: rgba(180, 83, 9, .06);
+      --tk-comp-bg: rgba(71, 85, 105, .05);
+
+      --lang-fr: #3b82f6;
+      --lang-en: #dc2626;
+      --lang-jp: #ec4899;
+      --lang-de: #f59e0b;
+      --lang-zh: #dc2626;
+
+      --serif-cn: 'Noto Serif SC', 'Songti SC', serif;
+      --sans-cn: 'Noto Sans SC', 'PingFang SC', sans-serif;
+      --serif-en: 'Fraunces', 'Times New Roman', serif;
+      --sans-en: 'Bricolage Grotesque', 'Helvetica Neue', sans-serif;
+      --mono: 'JetBrains Mono', 'SF Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans-cn);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility
+    }
+
+    body {
+      background: radial-gradient(1200px 800px at 90% -10%, rgba(159, 18, 57, .06), transparent 60%), radial-gradient(900px 700px at -10% 110%, rgba(67, 56, 202, .05), transparent 60%), var(--bg);
+      position: relative;
+      min-height: 100vh;
+      padding: 32px 0 48px;
+      isolation: isolate;
+    }
+
+    body.pw-locked {
+      overflow: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence baseFrequency='0.85' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.42 0 0 0 0 0.34 0 0 0 0 0.18 0 0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+      opacity: .35;
+    }
+
+    .page {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 40px;
+      position: relative;
+      z-index: 1
+    }
+
+    [id] {
+      scroll-margin-top: 24px;
+    }
+
+    /* ─────────── PASSWORD GATE ─────────── */
+    .pw-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(26, 23, 21, .72);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      animation: pwFadeIn .35s ease both;
+    }
+
+    .pw-gate.pw-hide {
+      animation: pwFadeOut .4s ease forwards;
+      pointer-events: none;
+    }
+
+    @keyframes pwFadeIn {
+      from {
+        opacity: 0
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes pwFadeOut {
+      from {
+        opacity: 1
+      }
+      to {
+        opacity: 0
+      }
+    }
+
+    .pw-modal {
+      width: 100%;
+      max-width: 520px;
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      box-shadow: 0 24px 60px rgba(26, 23, 21, .35), 0 0 0 6px rgba(245, 239, 222, .4);
+      padding: 28px 30px 26px;
+      position: relative;
+      animation: pwPop .4s cubic-bezier(.2, .9, .3, 1.1) both;
+    }
+
+    @keyframes pwPop {
+      from {
+        opacity: 0;
+        transform: translateY(18px) scale(.98)
+      }
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .pw-modal::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--tk-val) 0%, var(--gold) 45%, var(--tk-eng) 100%);
+    }
+
+    .pw-head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .pw-head .kicker {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--tk-val);
+      font-weight: 600;
+    }
+
+    .pw-head .badge {
+      margin-left: auto;
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--gold-deep);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border: 1px solid var(--gold);
+      border-radius: 1px;
+      font-weight: 600;
+    }
+
+    .pw-title {
+      font-family: var(--serif-cn);
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 1.3;
+      color: var(--ink);
+      letter-spacing: .02em;
+      margin-bottom: 6px;
+    }
+
+    .pw-title em {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 13px;
+      color: var(--ink-3);
+      display: block;
+      margin-top: 4px;
+      letter-spacing: .01em;
+    }
+
+    .pw-sub {
+      font-family: var(--sans-cn);
+      font-size: 11.5px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin-bottom: 18px;
+    }
+
+    .pw-sub b {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .pw-inputs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .pw-inputs input {
+      width: 56px;
+      height: 64px;
+      text-align: center;
+      font-family: var(--serif-en);
+      font-weight: 600;
+      font-size: 28px;
+      color: var(--ink);
+      background: var(--bg-paper);
+      border: 1.5px solid var(--line);
+      border-radius: 2px;
+      outline: none;
+      transition: border-color .16s ease, box-shadow .16s ease, background .16s ease;
+      caret-color: var(--tk-val);
+    }
+
+    .pw-inputs input:focus {
+      border-color: var(--gold-deep);
+      background: var(--bg-card);
+      box-shadow: 0 0 0 3px rgba(184, 138, 63, .18);
+    }
+
+    .pw-inputs.pw-error input {
+      border-color: var(--crit);
+      background: rgba(220, 38, 38, .05);
+      animation: pwShake .38s ease;
+    }
+
+    @keyframes pwShake {
+      0%, 100% { transform: translateX(0) }
+      20% { transform: translateX(-6px) }
+      40% { transform: translateX(6px) }
+      60% { transform: translateX(-4px) }
+      80% { transform: translateX(4px) }
+    }
+
+    .pw-error-msg {
+      min-height: 16px;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: .08em;
+      color: var(--crit);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity .2s ease;
+    }
+
+    .pw-error-msg.show {
+      opacity: 1;
+    }
+
+    .pw-notice {
+      padding: 12px 14px;
+      background: linear-gradient(90deg, rgba(220, 38, 38, .06), rgba(184, 138, 63, .05));
+      border-left: 3px solid var(--tk-val);
+      font-family: var(--serif-cn);
+      font-size: 11.5px;
+      line-height: 1.75;
+      color: var(--ink-2);
+      margin-bottom: 18px;
+    }
+
+    .pw-notice .lbl {
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--tk-val);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .pw-notice b {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .pw-btn {
+      width: 100%;
+      padding: 14px 18px;
+      background: var(--ink);
+      color: var(--bg-card);
+      border: none;
+      font-family: var(--serif-cn);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .14em;
+      cursor: pointer;
+      transition: background .18s ease, transform .12s ease;
+      border-radius: 1px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pw-btn::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(184, 138, 63, .35);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width .4s ease, height .4s ease;
+    }
+
+    .pw-btn:hover {
+      background: #000;
+    }
+
+    .pw-btn:hover::after {
+      width: 320px;
+      height: 320px;
+    }
+
+    .pw-btn:active {
+      transform: translateY(1px);
+    }
+
+    .pw-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .pw-btn small {
+      display: block;
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 10px;
+      letter-spacing: .04em;
+      color: rgba(245, 239, 222, .72);
+      margin-top: 3px;
+      text-transform: none;
+    }
+
+    .pw-foot {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--line-soft);
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      text-align: center;
+    }
+
+    @media (max-width:560px) {
+      .pw-modal {
+        padding: 22px 20px 20px;
+      }
+
+      .pw-title {
+        font-size: 17px;
+      }
+
+      .pw-inputs input {
+        width: 46px;
+        height: 54px;
+        font-size: 22px;
+      }
+
+      .pw-inputs {
+        gap: 8px;
+      }
+    }
+
+    /* BRAND BAR */
+    .brand-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0 18px;
+      border-bottom: 1.5px solid var(--ink);
+      margin-bottom: 32px
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: baseline;
+      gap: 10px
+    }
+
+    .brand-mark .logo {
+      font-family: var(--serif-en);
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: -.02em;
+      color: var(--ink);
+      font-style: italic
+    }
+
+    .brand-mark .tag {
+      font-family: var(--serif-cn);
+      font-size: 12px;
+      letter-spacing: .18em;
+      color: var(--ink-3);
+      padding-left: 12px;
+      border-left: 1px solid var(--line)
+    }
+
+    .doc-meta {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: .12em;
+      color: var(--ink-3);
+      text-transform: uppercase;
+      text-align: right;
+      line-height: 1.55
+    }
+
+    .doc-meta b {
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    /* TOC */
+    .toc {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      padding: 20px 24px 22px;
+      margin-bottom: 36px;
+      box-shadow: 0 1px 0 rgba(184, 138, 63, .15), 0 0 0 6px rgba(245, 239, 222, .4);
+    }
+
+    .toc-head {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .toc-head .zh {
+      font-family: var(--serif-cn);
+      font-weight: 900;
+      font-size: 16px;
+      color: var(--ink);
+      letter-spacing: .04em;
+    }
+
+    .toc-head .en {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-size: 12px;
+      color: var(--ink-3);
+    }
+
+    .toc-head .badge {
+      margin-left: auto;
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--gold-deep);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border: 1px solid var(--gold);
+      border-radius: 1px;
+      font-weight: 600;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .toc-item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 11px 12px;
+      background: var(--bg-paper);
+      border: 1px solid var(--line-soft);
+      border-left: 3px solid var(--c);
+      text-decoration: none;
+      color: inherit;
+      transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+    }
+
+    .toc-item:hover {
+      background: var(--bg-card);
+      transform: translateX(2px);
+      box-shadow: 0 2px 10px rgba(184, 138, 63, .12);
+    }
+
+    .toc-item.intro { --c: var(--gold-deep) }
+    .toc-item.ch1 { --c: var(--tk-val) }
+    .toc-item.ch2 { --c: var(--tk-eng) }
+    .toc-item.ch3 { --c: var(--tk-comp) }
+    .toc-item.ch4 { --c: var(--tk-team) }
+    .toc-item.ch5 { --c: var(--tk-ai) }
+    .toc-item.ch7 { --c: var(--tk-ops) }
+    .toc-item.ch8 { --c: var(--tk-eng) }
+    .toc-item.ch9 { --c: var(--crit) }
+
+    .toc-item .num {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--c);
+      font-weight: 600;
+      line-height: 1.1;
+      padding-top: 1px;
+    }
+
+    .toc-item .text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .toc-item .zh {
+      font-family: var(--serif-cn);
+      font-weight: 700;
+      font-size: 12px;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .toc-item .en {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-size: 10px;
+      color: var(--ink-3);
+      line-height: 1.35;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 56px;
+      align-items: center;
+      padding-bottom: 32px;
+      margin-bottom: 28px;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .hero-mantra {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      padding-right: 16px;
+      border-right: 1px solid var(--line);
+    }
+
+    .hero-mantra .eyebrow {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: .22em;
+      color: var(--ink-3);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .hero-mantra .eyebrow b { color: var(--tk-val); font-weight: 600 }
+
+    .hero-mantra .equation {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-top: 4px;
+    }
+
+    .hero-mantra .num {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 300;
+      font-size: 128px;
+      line-height: .85;
+      letter-spacing: -.05em;
+      color: var(--ink);
+    }
+
+    .hero-mantra .num em { font-style: italic; color: var(--tk-val); font-weight: 400 }
+
+    .hero-mantra .x {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 300;
+      font-size: 42px;
+      color: var(--ink-3);
+    }
+
+    .hero-mantra .num.scale em { color: var(--tk-eng) }
+
+    .hero-mantra .caption {
+      font-family: var(--serif-cn);
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--ink-2);
+      letter-spacing: .04em;
+      margin-top: -2px;
+      display: flex;
+      gap: 38px;
+    }
+
+    .hero-mantra .caption .lbl { display: flex; flex-direction: column; gap: 1px }
+
+    .hero-mantra .caption .lbl small {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--ink-3);
+      font-size: 11px;
+      letter-spacing: .02em
+    }
+
+    .hero-mantra .caption .lbl.first { padding-left: 8px; border-left: 2px solid var(--tk-val) }
+    .hero-mantra .caption .lbl.scale { padding-left: 8px; border-left: 2px solid var(--tk-eng) }
+
+    .hero-text { padding-bottom: 6px }
+
+    .hero-text h1 {
+      font-family: var(--serif-cn);
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 1.18;
+      color: var(--ink);
+      letter-spacing: .005em;
+    }
+
+    .hero-text h1 .accent {
+      background: linear-gradient(180deg, transparent 65%, rgba(159, 18, 57, .22) 65%, rgba(159, 18, 57, .22) 92%, transparent 92%);
+      padding: 0 .04em;
+    }
+
+    .hero-text h1 .accent-eng {
+      background: linear-gradient(180deg, transparent 65%, rgba(67, 56, 202, .18) 65%, rgba(67, 56, 202, .18) 92%, transparent 92%);
+      padding: 0 .04em;
+    }
+
+    .hero-text .epigraph {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 300;
+      font-size: 15px;
+      color: var(--ink-3);
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    .hero-text .lede {
+      margin-top: 14px;
+      font-family: var(--sans-cn);
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      max-width: 600px;
+    }
+
+    .hero-text .lede b { color: var(--ink); font-weight: 600 }
+
+    /* CYCLE STRIP */
+    .cycle-strip { margin-bottom: 36px }
+
+    .cycle-strip .strip-label {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: .18em;
+      color: var(--ink-3);
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cycle-strip .strip-label::after { content: ''; flex: 1; height: 1px; background: var(--line) }
+
+    .cycle {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr) auto repeat(4, 1fr);
+      gap: 0;
+      align-items: stretch;
+    }
+
+    .cycle-step {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      padding: 13px 14px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      border-right: none;
+    }
+
+    .cycle-step:last-of-type { border-right: 1px solid var(--line) }
+
+    .cycle-step::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--c)
+    }
+
+    .cycle-step.s1 { --c: var(--tk-team) }
+    .cycle-step.s2 { --c: var(--tk-eng) }
+    .cycle-step.s3 { --c: var(--tk-comp) }
+    .cycle-step.s4 { --c: var(--tk-val) }
+    .cycle-step.s5 { --c: var(--tk-eng) }
+    .cycle-step.s6 { --c: var(--tk-val) }
+    .cycle-step.s7 { --c: var(--tk-eng) }
+    .cycle-step.s8 { --c: var(--gold) }
+
+    .cycle-step .step-n {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 13px;
+      color: var(--c);
+      letter-spacing: .02em;
+    }
+
+    .cycle-step .step-h {
+      font-family: var(--serif-cn);
+      font-weight: 700;
+      font-size: 12.5px;
+      color: var(--ink);
+      letter-spacing: .02em;
+      line-height: 1.3;
+    }
+
+    .cycle-step .step-d {
+      font-family: var(--sans-cn);
+      font-size: 10px;
+      color: var(--ink-3);
+      line-height: 1.45;
+    }
+
+    .cycle-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 6px;
+      font-family: var(--serif-en);
+      font-style: italic;
+      color: var(--gold);
+      font-size: 18px;
+      background: transparent;
+    }
+
+    .cycle-divider .div-inner { display: flex; flex-direction: column; align-items: center; gap: 2px }
+
+    .cycle-divider .div-inner small {
+      font-family: var(--mono);
+      font-size: 8.5px;
+      color: var(--gold-deep);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    /* SECTION LABEL */
+    .section-label { display: flex; align-items: center; gap: 14px; margin-bottom: 16px }
+    .section-label .num { font-family: var(--serif-en); font-style: italic; font-weight: 400; font-size: 13px; color: var(--gold-deep) }
+    .section-label .ttl { font-family: var(--serif-cn); font-weight: 700; font-size: 15px; letter-spacing: .04em; color: var(--ink) }
+    .section-label .en { font-family: var(--serif-en); font-style: italic; font-size: 12px; color: var(--ink-3) }
+    .section-label .rule { flex: 1; height: 1px; background: var(--line) }
+
+    /* TIMELINE */
+    .timeline-block { margin-bottom: 38px }
+
+    .timeline {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      padding: 22px 26px 18px;
+      box-shadow: 0 1px 0 rgba(184, 138, 63, .15), 0 0 0 6px rgba(245, 239, 222, .4);
+    }
+
+    .cost-note {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: linear-gradient(90deg, rgba(220, 38, 38, .08), rgba(184, 138, 63, .06));
+      border-left: 3px solid var(--crit);
+      font-family: var(--serif-cn);
+      font-size: 12px;
+      line-height: 1.65;
+      color: var(--ink-2);
+    }
+
+    .cost-note b { color: var(--crit); font-weight: 700 }
+
+    .estimate-view { position: relative }
+
+    .mode-radio { position: absolute; opacity: 0; pointer-events: none }
+
+    .estimate-switch {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 0 0 14px;
+      margin-bottom: 14px;
+      border-bottom: 1px dashed var(--line-soft);
+    }
+
+    .estimate-switch .switch-note {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .mode-labels {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      background: var(--bg-paper);
+      padding: 2px;
+      border-radius: 2px
+    }
+
+    .mode-labels label {
+      cursor: pointer;
+      user-select: none;
+      padding: 5px 12px;
+      border-radius: 1px;
+      font-family: var(--mono);
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      color: var(--ink-3);
+      transition: background .16s ease, color .16s ease;
+    }
+
+    #mode-normal:checked~.estimate-switch label[for="mode-normal"],
+    #mode-conservative:checked~.estimate-switch label[for="mode-conservative"] {
+      background: var(--ink);
+      color: var(--bg-card);
+    }
+
+    #mode-normal:checked~.estimate-stack .estimate-panel.conservative { display: none }
+    #mode-conservative:checked~.estimate-stack .estimate-panel.normal { display: none }
+
+    .estimate-stack { display: flex; flex-direction: column; gap: 20px }
+
+    .estimate-panel {
+      border: 1px solid var(--line);
+      background: var(--bg-card);
+      box-shadow: 0 1px 0 rgba(184, 138, 63, .12), 0 0 0 5px rgba(245, 239, 222, .35);
+    }
+
+    .estimate-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid var(--line-soft);
+      background: var(--bg-paper);
+    }
+
+    .estimate-title { display: flex; flex-direction: column; gap: 3px }
+    .estimate-title b { font-family: var(--serif-cn); font-size: 14px; color: var(--ink); letter-spacing: .02em }
+    .estimate-title span { font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3) }
+
+    .estimate-meta { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end }
+
+    .estimate-meta span {
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: .06em;
+      padding: 3px 7px;
+      border: 1px solid var(--line);
+      background: var(--bg-card);
+      color: var(--ink-3);
+      border-radius: 1px;
+      white-space: nowrap;
+    }
+
+    .estimate-meta .good { border-color: var(--tk-eng); color: var(--tk-eng) }
+    .estimate-meta .risk { border-color: var(--crit); color: var(--crit); background: rgba(220, 38, 38, .04) }
+
+    .plan-gantt { overflow-x: auto }
+    .plan-inner { min-width: 1080px }
+
+    .plan-axis, .plan-phase, .plan-group, .plan-row { display: grid; grid-template-columns: 230px 1fr }
+    .plan-axis { height: 34px; border-bottom: 1px solid var(--line) }
+
+    .plan-left-head {
+      border-right: 1px solid var(--line-soft);
+      display: flex;
+      align-items: center;
+      padding-left: 0;
+      font-family: var(--mono);
+      font-size: 9.5px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+
+    .plan-scale, .plan-track { position: relative }
+    .plan-scale { height: 34px }
+
+    .plan-month {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-left: 1px dotted var(--line-soft);
+      display: flex;
+      align-items: center;
+      padding-left: 5px;
+      font-family: var(--mono);
+      font-size: 9.5px;
+      color: var(--ink-3);
+    }
+
+    .plan-month:first-child { border-left: none }
+
+    .plan-start, .plan-deadline {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1.5px;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    .plan-start { left: 0; background: var(--ink) }
+    .plan-deadline { left: 93.18%; border-left: 1.5px dashed var(--gold-deep) }
+
+    .plan-pin {
+      position: absolute;
+      top: 6px;
+      transform: translateX(-50%);
+      z-index: 5;
+      font-family: var(--mono);
+      font-size: 8.5px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      background: var(--ink);
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 1px;
+      white-space: nowrap;
+    }
+
+    .plan-pin.deadline { left: 93.18%; background: var(--gold); color: var(--ink); border: 1px solid var(--gold-deep) }
+
+    .plan-phase { height: 30px; border-bottom: 1px solid var(--line-soft); background: var(--bg-paper) }
+
+    .phase-left {
+      display: flex;
+      align-items: center;
+      border-right: 1px solid var(--line-soft);
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .phase-track { position: relative }
+
+    .phase-band {
+      position: absolute;
+      top: 7px;
+      height: 7px;
+      border-radius: 2px;
+      background: var(--c);
+    }
+
+    .phase-band span {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--mono);
+      font-size: 8.5px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--c);
+      white-space: nowrap;
+    }
+
+    .plan-group {
+      min-height: 28px;
+      border-top: 1px solid var(--line);
+      background: var(--bg-paper);
+    }
+
+    .plan-group-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-right: 1px solid var(--line-soft);
+      border-left: 3px solid var(--c);
+      padding-left: 8px;
+      font-family: var(--serif-cn);
+      font-weight: 700;
+      font-size: 12.5px;
+      color: var(--ink);
+    }
+
+    .plan-group-name i { display: none }
+
+    .plan-group-note {
+      display: flex;
+      align-items: center;
+      padding-left: 8px;
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+
+    .plan-row { min-height: 40px; border-top: 1px solid var(--line-soft) }
+
+    .plan-task {
+      border-right: 1px solid var(--line-soft);
+      padding: 6px 12px 6px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+    }
+
+    .plan-task b {
+      font-family: var(--sans-cn);
+      font-size: 10.5px;
+      line-height: 1.25;
+      color: var(--ink-2);
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
+
+    .plan-task span {
+      font-family: var(--sans-cn);
+      font-size: 9px;
+      line-height: 1.25;
+      color: var(--ink-3);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
+
+    .plan-task.crit b { color: var(--crit) }
+    .plan-task.mile b { color: var(--tk-val) }
+
+    .plan-track {
+      min-height: 40px;
+      background: linear-gradient(90deg, transparent 0 7.95%, rgba(232, 223, 199, .65) 7.95% 8.05%, transparent 8.05% 19.70%, rgba(232, 223, 199, .65) 19.70% 19.80%, transparent 19.80% 31.44%, rgba(232, 223, 199, .65) 31.44% 31.54%, transparent 31.54% 42.80%, rgba(232, 223, 199, .65) 42.80% 42.90%, transparent 42.90% 54.55%, rgba(232, 223, 199, .65) 54.55% 54.65%, transparent 54.65% 65.91%, rgba(232, 223, 199, .65) 65.91% 66.01%, transparent 66.01% 77.65%, rgba(232, 223, 199, .65) 77.65% 77.75%, transparent 77.75% 89.39%, rgba(232, 223, 199, .65) 89.39% 89.49%, transparent 89.49% 100%);
+    }
+
+    .plan-track::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 93.18%;
+      border-left: 1.5px dashed var(--gold-deep);
+      z-index: 1
+    }
+
+    .plan-bar {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 14px;
+      min-width: 7px;
+      border-radius: 2px;
+      background: var(--c);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, .08);
+      z-index: 2;
+    }
+
+    .plan-bar.dashed { background: transparent; border: 1px dashed var(--c); box-shadow: none }
+    .plan-bar.muted { background: rgba(71, 85, 105, .18); box-shadow: none }
+    .plan-bar.crit { background: rgba(220, 38, 38, .18); border: 1px solid rgba(220, 38, 38, .75); box-shadow: none }
+    .plan-bar.mile { background: var(--gold); border: 1px solid var(--gold-deep); box-shadow: none }
+    .plan-bar.late { background: rgba(220, 38, 38, .14); border: 1px dashed rgba(220, 38, 38, .8); box-shadow: none }
+
+    .plan-note {
+      padding: 11px 14px;
+      border-top: 1px dashed var(--line-soft);
+      font-family: var(--sans-cn);
+      font-size: 10.5px;
+      line-height: 1.6;
+      color: var(--ink-3);
+    }
+
+    .plan-note b { color: var(--ink); font-weight: 600 }
+
+    .keynode-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 14px 16px;
+      border-top: 1px dashed var(--line-soft);
+      background: linear-gradient(180deg, rgba(245, 239, 222, .35), transparent);
+    }
+
+    .keynode-col h4 {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .keynode-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 4px 0;
+      border-bottom: 1px dotted var(--line-soft);
+      font-family: var(--sans-cn);
+      font-size: 10px;
+      line-height: 1.35;
+      color: var(--ink-2);
+    }
+
+    .keynode-item:last-child { border-bottom: none }
+    .keynode-item b { font-family: var(--mono); font-size: 9.5px; color: var(--ink); white-space: nowrap }
+    .keynode-item .scope { font-family: var(--mono); font-size: 8px; color: var(--ink-mute); margin-left: 4px }
+
+    .gantt-tooltip {
+      position: fixed;
+      z-index: 50;
+      max-width: 260px;
+      pointer-events: none;
+      display: none;
+      background: rgba(26, 23, 21, .96);
+      color: var(--bg-card);
+      padding: 7px 9px;
+      border-radius: 2px;
+      box-shadow: 0 8px 24px rgba(26, 23, 21, .2);
+      font-family: var(--sans-cn);
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    .gantt-tooltip b { display: block; font-family: var(--serif-cn); font-size: 12px; margin-bottom: 2px; color: #fff }
+    .gantt-tooltip span { font-family: var(--mono); font-size: 9.5px; color: #d9cfb6 }
+
+    /* BUDGET */
+    .budget-block { margin-bottom: 38px }
+
+    .budget-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      padding: 22px 26px 20px;
+      box-shadow: 0 1px 0 rgba(184, 138, 63, .15), 0 0 0 6px rgba(245, 239, 222, .4);
+    }
+
+    .budget-hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 22px;
+      align-items: stretch;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px dashed var(--line-soft);
+    }
+
+    .budget-copy {
+      border-left: 3px solid var(--gold);
+      padding-left: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .budget-copy h3 {
+      font-family: var(--serif-cn);
+      font-size: 19px;
+      line-height: 1.25;
+      color: var(--ink);
+      font-weight: 900;
+      letter-spacing: .01em;
+    }
+
+    .budget-copy p { font-family: var(--sans-cn); font-size: 11.5px; line-height: 1.75; color: var(--ink-2) }
+    .budget-copy b { color: var(--ink); font-weight: 600 }
+
+    .budget-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px }
+
+    .budget-kpi {
+      background: var(--bg-paper);
+      border: 1px solid var(--line-soft);
+      padding: 12px 12px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      min-height: 86px;
+    }
+
+    .budget-kpi .label {
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      font-weight: 600
+    }
+
+    .budget-kpi .value {
+      font-family: var(--serif-en);
+      font-size: 22px;
+      line-height: 1;
+      color: var(--ink);
+      font-weight: 700;
+      letter-spacing: -.02em
+    }
+
+    .budget-kpi .value.cn { color: var(--tk-comp) }
+    .budget-kpi .value.hk { color: var(--tk-team) }
+    .budget-kpi .value.total { color: var(--tk-val) }
+
+    .budget-kpi .note { font-family: var(--sans-cn); font-size: 10px; line-height: 1.45; color: var(--ink-3) }
+
+    .budget-subhead {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 18px 0 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .budget-subhead .zh { font-family: var(--serif-cn); font-weight: 700; font-size: 14px; color: var(--ink) }
+    .budget-subhead .en { font-family: var(--serif-en); font-style: italic; font-size: 11.5px; color: var(--ink-3) }
+
+    .budget-subhead .tag {
+      margin-left: auto;
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold-deep);
+      border: 1px solid var(--gold);
+      padding: 3px 7px;
+      border-radius: 1px;
+    }
+
+    .budget-method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px }
+
+    .budget-card {
+      background: var(--bg-paper);
+      border: 1px solid var(--line-soft);
+      padding: 12px 13px 11px;
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .budget-card .idx {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--gold-deep);
+      line-height: 1;
+      padding-top: 2px;
+    }
+
+    .budget-card h4 {
+      font-family: var(--serif-cn);
+      font-size: 12.5px;
+      color: var(--ink);
+      line-height: 1.35;
+      margin-bottom: 5px
+    }
+
+    .budget-card p { font-family: var(--sans-cn); font-size: 10.5px; line-height: 1.65; color: var(--ink-2) }
+    .budget-card p b { font-weight: 600; color: var(--ink) }
+
+    .budget-card .formula {
+      margin-top: 7px;
+      font-family: var(--mono);
+      font-size: 9.5px;
+      line-height: 1.5;
+      color: var(--tk-val);
+      background: rgba(159, 18, 57, .06);
+      padding: 5px 7px;
+      border-left: 2px solid var(--tk-val);
+    }
+
+    .budget-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line-soft);
+      background: var(--bg-card)
+    }
+
+    .budget-table { width: 100%; border-collapse: collapse; min-width: 860px }
+
+    .budget-table th {
+      background: var(--bg-paper);
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      font-weight: 600;
+      text-align: left;
+      padding: 8px 9px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .budget-table td {
+      font-family: var(--sans-cn);
+      font-size: 10.5px;
+      line-height: 1.55;
+      color: var(--ink-2);
+      padding: 8px 9px;
+      border-bottom: 1px solid var(--line-soft);
+      vertical-align: top;
+    }
+
+    .budget-table tr:last-child td { border-bottom: none }
+
+    .budget-table td.amount {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--ink);
+      white-space: nowrap;
+      font-weight: 600
+    }
+
+    .budget-table td.factor { color: var(--ink-3) }
+
+    .budget-table .section-row td {
+      background: linear-gradient(90deg, rgba(184, 138, 63, .12), rgba(245, 239, 222, .45));
+      font-family: var(--serif-cn);
+      font-weight: 700;
+      color: var(--ink);
+      font-size: 12px;
+    }
+
+    .budget-totals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px }
+
+    .budget-total {
+      border: 1px solid var(--line);
+      background: var(--bg-paper);
+      padding: 12px 13px;
+      border-left: 3px solid var(--c);
+    }
+
+    .budget-total.cn { --c: var(--tk-comp) }
+    .budget-total.hk { --c: var(--tk-team) }
+    .budget-total.all { --c: var(--tk-val) }
+
+    .budget-total .name { font-family: var(--serif-cn); font-weight: 700; font-size: 12.5px; color: var(--ink); margin-bottom: 5px }
+
+    .budget-total .sum {
+      font-family: var(--serif-en);
+      font-size: 22px;
+      line-height: 1;
+      color: var(--c);
+      font-weight: 700;
+      letter-spacing: -.02em
+    }
+
+    .budget-total .desc { font-family: var(--sans-cn); font-size: 10px; color: var(--ink-3); line-height: 1.5; margin-top: 6px }
+
+    /* METHOD */
+    .method-block { margin-bottom: 38px }
+
+    .method-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      padding: 22px 26px 20px;
+      box-shadow: 0 1px 0 rgba(184, 138, 63, .15), 0 0 0 6px rgba(245, 239, 222, .4);
+    }
+
+    .method-lede {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+      border-bottom: 1px dashed var(--line-soft);
+    }
+
+    .method-lede-card {
+      background: var(--bg-paper);
+      border: 1px solid var(--line-soft);
+      border-left: 3px solid var(--c);
+      padding: 13px 14px;
+    }
+
+    .method-lede-card.engine { --c: var(--tk-eng) }
+    .method-lede-card.market { --c: var(--tk-val) }
+
+    .method-lede-card h3 { font-family: var(--serif-cn); font-size: 14px; color: var(--ink); margin-bottom: 6px }
+    .method-lede-card p { font-family: var(--sans-cn); font-size: 10.5px; line-height: 1.65; color: var(--ink-2) }
+
+    .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px }
+
+    .method-card {
+      background: var(--bg-paper);
+      border: 1px solid var(--line-soft);
+      padding: 12px 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .method-card h4 { font-family: var(--serif-cn); font-size: 12.5px; color: var(--ink); line-height: 1.35 }
+
+    .method-card ul { list-style: none; display: flex; flex-direction: column; gap: 5px }
+
+    .method-card li {
+      font-family: var(--sans-cn);
+      font-size: 10.5px;
+      line-height: 1.55;
+      color: var(--ink-2);
+      padding-left: 11px;
+      position: relative;
+    }
+
+    .method-card li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: .78em;
+      width: 6px;
+      height: 1px;
+      background: var(--gold-deep)
+    }
+
+    .method-mini-table { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 10px 0 18px }
+
+    .method-metric {
+      background: var(--bg-paper);
+      border: 1px solid var(--line-soft);
+      padding: 10px 11px;
+      border-top: 3px solid var(--tk-eng)
+    }
+
+    .method-metric .name { font-family: var(--sans-cn); font-size: 10.5px; color: var(--ink); font-weight: 600; line-height: 1.35 }
+    .method-metric .num { font-family: var(--serif-en); font-size: 20px; color: var(--tk-eng); font-weight: 700; line-height: 1; margin-top: 6px }
+
+    .method-metric .note {
+      font-family: var(--mono);
+      font-size: 8.5px;
+      color: var(--ink-3);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-top: 4px
+    }
+
+    .method-exam-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px }
+
+    .method-exam {
+      background: var(--bg-paper);
+      border: 1px solid var(--line-soft);
+      padding: 10px 11px;
+      min-height: 120px;
+    }
+
+    .method-exam h4 { font-family: var(--serif-cn); font-size: 12px; color: var(--ink); margin-bottom: 6px }
+    .method-exam p { font-family: var(--sans-cn); font-size: 10px; line-height: 1.55; color: var(--ink-2) }
+
+    /* OVERVIEW */
+    .overview-block { margin-bottom: 26px }
+
+    .overview-panel {
+      background: linear-gradient(90deg, rgba(67, 56, 202, .05), rgba(245, 239, 222, .72));
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--tk-val);
+      padding: 16px 18px 14px;
+      box-shadow: 0 1px 0 rgba(184, 138, 63, .12);
+    }
+
+    .overview-panel .kicker {
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--tk-val);
+      font-weight: 600;
+      margin-bottom: 6px
+    }
+
+    .overview-panel .title {
+      font-family: var(--serif-cn);
+      font-size: 18px;
+      line-height: 1.25;
+      color: var(--ink);
+      font-weight: 900;
+      margin-bottom: 7px
+    }
+
+    .overview-panel p { font-family: var(--sans-cn); font-size: 12px; line-height: 1.75; color: var(--ink-2) }
+
+    .share-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px }
+
+    .share-pills span {
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      border: 1px solid var(--line-soft);
+      background: var(--bg-card);
+      padding: 4px 7px;
+      border-radius: 1px
+    }
+
+    .effort-bar {
+      display: flex;
+      height: 18px;
+      border: 1px solid var(--line-soft);
+      background: var(--bg-card);
+      overflow: hidden;
+      margin-top: 4px
+    }
+
+    .effort-bar span { display: block; height: 100%; background: var(--c); opacity: .86 }
+
+    .effort-legend {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px 8px;
+      margin-top: 8px;
+      font-family: var(--mono);
+      font-size: 8.5px;
+      color: var(--ink-3);
+      line-height: 1.35
+    }
+
+    .effort-legend b { color: var(--ink); font-weight: 600 }
+
+    /* PANEL */
+    .panel {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      padding: 22px 24px;
+      position: relative
+    }
+
+    .panel-h {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line-soft)
+    }
+
+    .panel-h .zh { font-family: var(--serif-cn); font-weight: 700; font-size: 15px; color: var(--ink); letter-spacing: .02em }
+    .panel-h .en { font-family: var(--serif-en); font-style: italic; font-size: 11.5px; color: var(--ink-3) }
+
+    .panel-h .badge {
+      margin-left: auto;
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--tk-val);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border: 1px solid var(--tk-val);
+      border-radius: 1px
+    }
+
+    .panel-h .badge.eng { color: var(--tk-eng); border-color: var(--tk-eng) }
+    .panel-h .badge.gold { color: var(--gold-deep); border-color: var(--gold) }
+
+    .reuse-list { display: flex; flex-direction: column; gap: 8px }
+
+    .reuse-summary {
+      margin-top: 12px;
+      padding: 11px 14px;
+      background: linear-gradient(90deg, rgba(67, 56, 202, .12), rgba(67, 56, 202, .03));
+      border-left: 3px solid var(--tk-eng);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .reuse-summary .l { font-family: var(--sans-cn); font-size: 11px; color: var(--ink-2) }
+    .reuse-summary .l b { color: var(--ink); font-weight: 600 }
+
+    .reuse-summary .r {
+      font-family: var(--mono);
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--tk-eng);
+      letter-spacing: .04em
+    }
+
+    /* footer */
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding-top: 22px;
+      margin-top: 10px;
+      border-top: 1px solid var(--ink);
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: .14em;
+      color: var(--ink-3);
+      text-transform: uppercase
+    }
+
+    .footer .foot-left { display: flex; flex-direction: column; gap: 6px }
+
+    .footer .lh {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 14px;
+      color: var(--ink)
+    }
+
+    .footer .lh-cn {
+      font-family: var(--serif-cn);
+      font-style: normal;
+      color: var(--ink-3);
+      font-weight: 400;
+      letter-spacing: .04em;
+      font-size: 11px;
+      text-transform: none;
+      line-height: 1.55;
+    }
+
+    .footer .foot-right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 9.5px;
+      letter-spacing: .14em;
+    }
+
+    .footer .pg { color: var(--ink-mute) }
+    .footer .pg b { color: var(--ink); font-weight: 600 }
+
+    @media (max-width:1100px) {
+      .hero { grid-template-columns: 1fr; gap: 24px }
+
+      .hero-mantra {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 16px
+      }
+
+      .hero-mantra .num { font-size: 84px }
+      .hero-mantra .x { font-size: 30px }
+      .cycle { grid-template-columns: repeat(2, 1fr) }
+      .cycle-divider { display: none }
+      .budget-hero { grid-template-columns: 1fr }
+      .budget-method-grid { grid-template-columns: 1fr }
+      .method-lede, .method-grid, .method-exam-grid { grid-template-columns: 1fr }
+      .method-mini-table { grid-template-columns: repeat(2, 1fr) }
+      .toc-grid { grid-template-columns: repeat(2, 1fr) }
+    }
+
+    @media (max-width:760px) {
+      .page { padding: 0 18px }
+      .hero-mantra .num { font-size: 64px }
+      .hero-mantra .x { font-size: 24px }
+      .hero-text h1 { font-size: 26px }
+      .cycle { grid-template-columns: 1fr; gap: 8px; background: transparent }
+      .cycle-step { border-right: 1px solid var(--line) }
+      .panel { padding: 18px 16px }
+      .timeline { padding: 18px 14px }
+      .brand-bar { flex-direction: column; align-items: flex-start; gap: 8px }
+      .overview-panel { padding: 14px 14px 12px }
+      .overview-panel .title { font-size: 15px }
+      .doc-meta { text-align: left }
+      .estimate-switch { align-items: flex-start; flex-direction: column }
+      .keynode-grid { grid-template-columns: 1fr }
+      .budget-panel { padding: 18px 14px }
+      .budget-kpis { grid-template-columns: 1fr }
+      .budget-totals { grid-template-columns: 1fr }
+      .budget-card { grid-template-columns: 28px 1fr }
+      .budget-copy h3 { font-size: 17px }
+      .method-panel { padding: 18px 14px }
+      .method-mini-table { grid-template-columns: 1fr }
+      .toc { padding: 16px 14px 18px }
+      .toc-grid { grid-template-columns: 1fr }
+      .footer { grid-template-columns: 1fr }
+      .footer .foot-right { text-align: left }
+    }
+
+    @media print {
+      body { background: #fff; padding: 0 }
+      body::before { display: none }
+      .pw-gate { display: none !important }
+      .page { max-width: none; padding: 14mm }
+      @page { size: A3 landscape; margin: 0 }
+    }
+  </style>
+</head>
+
+<body class="pw-locked">
+
+  <!-- PASSWORD GATE -->
+  <div class="pw-gate" id="pwGate" role="dialog" aria-modal="true" aria-labelledby="pwTitle">
+    <div class="pw-modal">
+      <div class="pw-head">
+        <div class="kicker">CONFIDENTIAL · 受限访问</div>
+        <div class="badge">Angel Round 2026</div>
+      </div>
+      <div class="pw-title">
+        LangHub 合作融资意向书 · 访问校验
+        <em>Access verification · please enter the 4-digit passcode</em>
+      </div>
+      <p class="pw-sub">
+        本文件为 LangHub / LangPrepHub 致受邀投资人的 <b>机密意向书</b>。请输入创始团队提供的 <b>4 位访问密码</b> 进入阅览。
+      </p>
+
+      <form id="pwForm" autocomplete="off" novalidate>
+        <div class="pw-inputs" id="pwInputs">
+          <input type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="密码第1位" data-idx="0">
+          <input type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="密码第2位" data-idx="1">
+          <input type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="密码第3位" data-idx="2">
+          <input type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]" aria-label="密码第4位" data-idx="3">
+        </div>
+        <div class="pw-error-msg" id="pwError">密码错误 · 请重新输入</div>
+
+        <div class="pw-notice">
+          <span class="lbl">保密声明 · Confidentiality Notice</span>
+          基于对投资人个人信息与项目整体商业机密的保护，<b>输入密码并点击"确认进入"</b>即视为阁下已阅读并同意本文件仅限本人阅读参考。<b>未经创始团队书面同意，不得以任何形式向第三方披露、复制、转发或传播本意向书之任何内容</b>；如因违反本条款导致本项目遭受商誉、商业机密或融资进程上的损害，阁下须就相关损失承担全部责任。
+        </div>
+
+        <button type="submit" class="pw-btn">
+          <span>
+            确认进入 · 同意保密声明
+            <small>Agree &amp; Enter</small>
+          </span>
+        </button>
+      </form>
+
+      <div class="pw-foot">LangHub · v3.0 · 青岛 + 香港 · 2026.06</div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <!-- BRAND BAR -->
+    <div class="brand-bar">
+      <div class="brand-mark">
+        <div class="logo">LangHub<span style="font-style:normal;font-weight:300">.</span></div>
+        <div class="tag">合 作 融 资 意 向 书 · 致 投 资 人</div>
+      </div>
+      <div class="doc-meta">
+        <div>Partnership &amp; Financing Term Sheet · <b>天使轮 2026</b></div>
+        <div>青岛 + 香港双主体 · v3.0 · 机密仅限受邀投资人阅读</div>
+      </div>
+    </div>
+
+    <!-- TOC -->
+    <nav class="toc" aria-label="目录">
+      <div class="toc-head">
+        <div class="zh">目录</div>
+        <div class="en">Table of Contents · click to jump</div>
+        <div class="badge">Investor Brief</div>
+      </div>
+      <div class="toc-grid">
+        <a class="toc-item intro" href="#overview">
+          <div class="num">00</div>
+          <div class="text">
+            <div class="zh">项目概况</div>
+            <div class="en">Project Overview</div>
+          </div>
+        </a>
+        <a class="toc-item ch1" href="#ch1">
+          <div class="num">01</div>
+          <div class="text">
+            <div class="zh">第一章 · 核心方法论与未来规划</div>
+            <div class="en">Methodology · Milestones · Direction</div>
+          </div>
+        </a>
+        <a class="toc-item ch2" href="#ch2">
+          <div class="num">02</div>
+          <div class="text">
+            <div class="zh">第二章 · 六轨道全周期 · 五语言落地</div>
+            <div class="en">Six Tracks · Five-Language Rollout</div>
+          </div>
+        </a>
+        <a class="toc-item ch3" href="#ch3">
+          <div class="num">03</div>
+          <div class="text">
+            <div class="zh">第三章 · 资金使用计划与成本预算</div>
+            <div class="en">Budget Methodology · Year-One Plan</div>
+          </div>
+        </a>
+        <a class="toc-item ch4" href="#ch4">
+          <div class="num">04</div>
+          <div class="text">
+            <div class="zh">第四章 · 团队与职责分配</div>
+            <div class="en">Team Structure · Responsibilities</div>
+          </div>
+        </a>
+        <a class="toc-item ch5" href="#ch5">
+          <div class="num">05</div>
+          <div class="text">
+            <div class="zh">第五章 · 合作模式与股权架构</div>
+            <div class="en">Operating Model · Equity Structure</div>
+          </div>
+        </a>
+        <a class="toc-item ch7" href="#ch7">
+          <div class="num">07</div>
+          <div class="text">
+            <div class="zh">第七章 · 投资人权益与创始人义务</div>
+            <div class="en">Investor Rights · Founder Duties</div>
+          </div>
+        </a>
+        <a class="toc-item ch8" href="#ch8">
+          <div class="num">08</div>
+          <div class="text">
+            <div class="zh">第八章 · 对投资人合作战略期望</div>
+            <div class="en">Strategic Support Expectations</div>
+          </div>
+        </a>
+        <a class="toc-item ch9" href="#ch9">
+          <div class="num">09</div>
+          <div class="text">
+            <div class="zh">第九章 · 风险提示</div>
+            <div class="en">Risk Notice</div>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <!-- PROJECT OVERVIEW -->
+    <div class="overview-block" id="overview">
+      <div class="overview-panel">
+        <div class="kicker">项目概况</div>
+        <div class="title">LangPrepHub 是一款面向严肃语言学习者与标准化语言考试备考人群的 AI 驱动多语种学习平台，覆盖网站与移动应用双端。</div>
+        <p>项目以法语、英语、日语、德语、中文五大语种为首发矩阵，提供智能口语对练、写作批改、听力训练、阅读理解及考试模拟等核心功能模块。产品基于自研 AI 引擎与多模态语言模型，针对各语种主流标准化考试（IELTS、TOEFL、JLPT、TestDaF、TCF/TEF、HSK 等）提供精准化备考辅助。</p>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-mantra">
+        <div class="eyebrow">核心方法论 · <b>BUILD ONCE, LAUNCH FIVE TIMES</b></div>
+        <div class="equation">
+          <div class="num"><em>1</em></div>
+          <div class="x">×</div>
+          <div class="num scale"><em>5</em></div>
+        </div>
+        <div class="caption">
+          <div class="lbl first">
+            <span>验证一次</span>
+            <small>Validate the engine</small>
+          </div>
+          <div class="lbl scale">
+            <span>复用五次</span>
+            <small>Repeat across languages</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1>
+          <span class="accent">先验证一次产品</span>，<br>
+          再让 <span class="accent-eng">同一套引擎</span> 跑五种语言。
+        </h1>
+        <div class="epigraph">Build the engine once. Launch it five times. Each launch teaches the next.</div>
+        <div class="lede">
+          每次发布都是一次验证实验：第一次发布要 <b>～6个月（含合规）</b>，第二次 <b>~1 -2个月</b>，第三次起 <b>~半个月</b>。<b>团队 + 产品重构 + 合规从 Day 1
+            完全并行</b>——其中合规是最慢、最不可压缩的轨道。<b>合规一就绪，立即上线。</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label" id="ch1">
+      <span class="num">第一章</span>
+      <span class="ttl">核心方法论 · 里程碑与未来规划</span>
+      <span class="en">Methodology · milestones · product direction</span>
+      <span class="rule"></span>
+    </div>
+
+    <!-- CYCLE STRIP -->
+    <div class="cycle-strip">
+      <div class="strip-label">发布周期 · The launch cycle</div>
+      <div class="cycle">
+        <div class="cycle-step s1">
+          <span class="step-n">i.</span>
+          <span class="step-h">团队 + 重构 + 合规</span>
+          <span class="step-d">三件事从 Day 1 并行启动 — 合规走最慢路</span>
+        </div>
+        <div class="cycle-step s2">
+          <span class="step-n">ii.</span>
+          <span class="step-h">海外软上线（HK）</span>
+          <span class="step-d">合规无依赖 — 4 周内可获得真实用户使用数据</span>
+        </div>
+        <div class="cycle-step s3">
+          <span class="step-n">iii.</span>
+          <span class="step-h">合规闭环</span>
+          <span class="step-d">ICP 经营许可证就绪 — 国内不再被任何东西阻塞</span>
+        </div>
+        <div class="cycle-step s4">
+          <span class="step-n">iv.</span>
+          <span class="step-h">国内 + 海外双区上线</span>
+          <span class="step-d">第一次发布完成 · 用户反馈与产品数据开始沉淀</span>
+        </div>
+
+        <div class="cycle-divider">
+          <div class="div-inner">
+            <span style="font-size:24px">⟳</span>
+            <small>×4</small>
+          </div>
+        </div>
+
+        <div class="cycle-step s5">
+          <span class="step-n">v.</span>
+          <span class="step-h">引擎抽象</span>
+          <span class="step-d">把第一次的产品 / AI / 考试提分抽象为可复用组件</span>
+        </div>
+        <div class="cycle-step s6">
+          <span class="step-n">vi.</span>
+          <span class="step-h">数据驱动决策</span>
+          <span class="step-d">通过数据判断 → 启动下一次发布；不通过 → 继续打磨</span>
+        </div>
+        <div class="cycle-step s7">
+          <span class="step-n">vii.</span>
+          <span class="step-h">下一次发布加速</span>
+          <span class="step-d">第二次 ~1 个月 · 第三次起 ~半个月（合规增量更新）</span>
+        </div>
+        <div class="cycle-step s8">
+          <span class="step-n">viii.</span>
+          <span class="step-h">5 语言矩阵完成</span>
+          <span class="step-d">同一套引擎跑出 5 个产品 · 每次都比上次更快</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <div class="method-block">
+      <div class="method-panel">
+        <div class="method-lede">
+          <div class="method-lede-card engine">
+            <h3>核心方法论：Build once, launch five times</h3>
+            <p>LangPrepHub 的产品路径不是为每个语种重复造一套系统，而是先完成产品框架、AI 接入、教学路径、合规流程与数据采集体系的基础抽象，再以语种和考试任务为实例进行复制。引擎复用后的发布节奏按原估算的
+              1/2 计入。</p>
+          </div>
+          <div class="method-lede-card market">
+            <h3>产品定位：严肃语言学习与考试备考</h3>
+            <p>产品面向留学申请者、在职语言证书备考者、高校外语专业学生及外语高考考生，区别于游戏化 / 碎片化语言学习产品，核心价值是 AI 驱动的个性化备考路径、全真模拟考试环境，以及精准到各考试题型的评分与反馈机制。
+            </p>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">引擎复用后的发布数学</div>
+          <div class="tag">Engine</div>
+        </div>
+        <div class="method-mini-table">
+          <div class="method-metric">
+            <div class="name">产品框架 + APP 容器</div>
+            <div class="num">~47.5%</div>
+            <div class="note">Reuse</div>
+          </div>
+          <div class="method-metric">
+            <div class="name">AI 接入 + 个性化框架</div>
+            <div class="num">~42.5%</div>
+            <div class="note">Reuse</div>
+          </div>
+          <div class="method-metric">
+            <div class="name">教学法 + CEFR 路径</div>
+            <div class="num">~35%</div>
+            <div class="note">Reuse</div>
+          </div>
+          <div class="method-metric">
+            <div class="name">CN 增量合规框架</div>
+            <div class="num">~40%</div>
+            <div class="note">Reuse</div>
+          </div>
+        </div>
+        <div class="reuse-summary">
+          <div class="l"><b>结果：</b>第二次 ~30 天 · 第三次起 ~15 天 / 实例</div>
+          <div class="r">2.5× faster</div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">项目里程碑（20 个月跑道）</div>
+          <div class="en">Three-stage execution roadmap</div>
+          <div class="tag">Milestones</div>
+        </div>
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>第一阶段 · 产品构建期（第 1–8 个月）</h4>
+            <ul>
+              <li>第 1–2 个月完成青岛与香港双主体注册、银行开户、天使轮资金到账，启动 UI/UX 设计系统、官网 MVP 与法语香港海外上线。</li>
+              <li>第 3–7 个月完成法语国内内测、英语双端上线、日语开发与双端上线、国内 APP 首次审核通过、德语开发与上线。</li>
+              <li>第 7–8 个月完成中文海外版本上线、五语种全部交付运营、官网全语种页面与 B 端合作入口更新；目标注册用户 2.5–6 万。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>第二阶段 · 产品打磨与用户增长期（第 8–16 个月）</h4>
+            <ul>
+              <li>第 8–10 个月基于用户行为数据优化各语种产品与 AI 模型，上线考试备考模块，优先覆盖 IELTS、JLPT N1–N2、Goethe B1–B2、TCF/TEF，并开放付费会员。</li>
+              <li>第 10–13 个月通过内容营销、社群运营、KOL 合作推动 C 端付费转化，建立核心用户社群，并启动教育机构合作意向沟通。</li>
+              <li>第 12–16 个月五语种累计付费用户目标 1.5–3 万；按月均 ARPU 35 元估算，ARR 约 630-1260 万。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>第三阶段 · 商业化拓展期（第 14–20 个月）</h4>
+            <ul>
+              <li>第 14–16 个月启动 B 端业务，与培训机构、高校外语院系、留学中介合作，提供机构版授权、定制化备考方案与学生数据分析服务。</li>
+              <li>第 16–18 个月校企合作规模化，签约首批付费机构客户，B 端收入开始贡献营收，海外用户占比目标提升至 20%–30%。</li>
+              <li>第 18–20 个月累计付费用户突破 5–8 万，C 端与 B 端双引擎驱动营收，完成 A 轮融资准备：审计、数据整理、材料编制与投资机构接触。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">考试覆盖规划（第 1–12 个月启动）</div>
+          <div class="en">Language and exam coverage</div>
+          <div class="tag">Coverage</div>
+        </div>
+        <div class="budget-table-wrap">
+          <table class="budget-table">
+            <thead>
+              <tr>
+                <th>语言</th>
+                <th>考试</th>
+                <th>对应考试机构</th>
+                <th>口语</th>
+                <th>写作</th>
+                <th>阅读</th>
+                <th>听力</th>
+                <th>其他</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><b>英语</b></td><td>IELTS</td><td>British Council / IDP / Cambridge Assessment English</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>英语</b></td><td>TOEFL</td><td>ETS（美国教育考试服务中心）</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>英语</b></td><td>PTE</td><td>Pearson（培生集团）</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>英语</b></td><td>KET / PET</td><td>Cambridge Assessment English（剑桥大学考评部）</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>英语</b></td><td>四六级（CET-4/6）</td><td>教育部教育考试院</td><td>选考</td><td>✓</td><td>✓</td><td>✓</td><td>翻译 ✓</td></tr>
+              <tr><td><b>英语</b></td><td>国内高考</td><td>教育部教育考试院</td><td>—</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>日语</b></td><td>JLPT N1-N5</td><td>日本国际交流基金会 / 日本国际教育支援协会</td><td>—</td><td>—</td><td>✓</td><td>✓</td><td>语言知识（文字·词汇·语法）✓</td></tr>
+              <tr><td><b>日语</b></td><td>NAT-TEST</td><td>日本专门教育出版（SENMON KYOUIKU）</td><td>—</td><td>—</td><td>✓</td><td>✓</td><td>语言文字 ✓ 语法 ✓</td></tr>
+              <tr><td><b>日语</b></td><td>专四 / 专八</td><td>教育部高等学校外语专业教学指导委员会</td><td>专八 ✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>日语</b></td><td>国内高考</td><td>教育部教育考试院</td><td>—</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>德语</b></td><td>Goethe A1-C2</td><td>Goethe-Institut（歌德学院）</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>德语</b></td><td>TestDaF（德福）</td><td>TestDaF-Institut（德福考试院）</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>德语</b></td><td>telc</td><td>telc GmbH（欧洲语言证书协会）</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>德语</b></td><td>专四 / 专八</td><td>教育部高等学校外语专业教学指导委员会</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>德语</b></td><td>国内高考</td><td>教育部教育考试院</td><td>—</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>法语</b></td><td>TCF</td><td>France Éducation international（法国国际教育研究中心）</td><td>选考</td><td>选考</td><td>✓</td><td>✓</td><td>语法结构 ✓</td></tr>
+              <tr><td><b>法语</b></td><td>TEF</td><td>CCI Paris Île-de-France（法国巴黎工商会）</td><td>选考</td><td>选考</td><td>✓</td><td>✓</td><td>词汇语法 ✓</td></tr>
+              <tr><td><b>法语</b></td><td>DELF / DALF</td><td>France Éducation international</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>法语</b></td><td>专四 / 专八</td><td>教育部高等学校外语专业教学指导委员会</td><td>—</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>法语</b></td><td>国内高考</td><td>教育部教育考试院</td><td>—</td><td>✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>中文</b></td><td>HSK 1-6</td><td>教育部中外语言交流合作中心（原汉办）</td><td>—</td><td>3级起 ✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>中文</b></td><td>HSKK</td><td>教育部中外语言交流合作中心</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><td><b>中文</b></td><td>YCT</td><td>教育部中外语言交流合作中心</td><td>—</td><td>高级 ✓</td><td>✓</td><td>✓</td><td>—</td></tr>
+              <tr><td><b>中文</b></td><td><b>CSCA</b></td><td>中国国家留学基金管理委员会（CSC）</td><td>—</td><td>✓</td><td>✓</td><td>—</td><td>数学 ✓ 物理 / 化学 ✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">AI 模型架构与产品演进路径</div>
+          <div class="en">Exam × task modeling architecture</div>
+          <div class="tag">AI Roadmap</div>
+        </div>
+        <div class="method-lede">
+          <div class="method-lede-card engine">
+            <h3>每个语种 × 每个考试 × 每个任务独立建模</h3>
+            <p>产品不会依赖通用大模型直接评分，而是为 IELTS Writing Task 2、TOEFL Speaking Task 1、Goethe B2 Sprechen Teil 1 等考试任务分别构建 Prompt
+              Set 与微调模型。每套模型对应单一任务类型，按评分维度、回答格式、档位描述与反馈逻辑独立训练，单套约需 500–3,000 条标注样本。</p>
+          </div>
+          <div class="method-lede-card market">
+            <h3>第一年 60–80 套核心模型，第二年扩展至 150–250 套</h3>
+            <p>五个语种全部考试预计需要约 180–250 套提示词 + 微调模型组合。第一年先部署每个语种 4–5 套核心模型，覆盖高频考试核心任务；第 12–20 个月形成"基础学习免费 +
+              备考模块付费"的变现模型，并向机构版作文批改、考试成绩预测和留学申请生态对接演进。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline-block">
+      <div class="section-label" id="ch2">
+        <span class="num">第二章</span>
+        <span class="ttl">六轨道全周期 · 五语言落地</span>
+        <span class="en">Six tracks · five-language rollout</span>
+        <span class="rule"></span>
+      </div>
+
+      <div class="timeline">
+        <div class="estimate-view">
+          <input class="mode-radio" type="radio" name="estimate-mode" id="mode-normal" checked>
+          <input class="mode-radio" type="radio" name="estimate-mode" id="mode-conservative">
+          <div class="estimate-switch">
+            <div class="switch-note">Scenario switch · hover bars for duration</div>
+            <div class="mode-labels" aria-label="估算模式切换">
+              <label for="mode-normal">正常估算</label>
+              <label for="mode-conservative">保守估算</label>
+            </div>
+          </div>
+
+          <div class="estimate-stack">
+            <div class="estimate-panel normal">
+              <div class="estimate-head">
+                <div class="estimate-title">
+                  <b>正常估算</b>
+                  <span>Start 2026.6.10 · Deadline 2027.2.11</span>
+                </div>
+                <div class="estimate-meta">
+                  <span class="good">预计完成 · 2027.1.11</span>
+                  <span>截止余量 · 31 天</span>
+                </div>
+              </div>
+              <div class="plan-gantt">
+                <div class="plan-inner">
+                  <div class="plan-axis">
+                    <div class="plan-left-head">维度 · TRACK</div>
+                    <div class="plan-scale">
+                      <div class="plan-start"></div>
+                      <div class="plan-deadline"></div>
+                      <div class="plan-pin" style="left:0">起 · 6/10</div>
+                      <div class="plan-pin deadline">截止 · 2/11</div>
+                      <div class="plan-month" style="left:0;width:7.95%">6月</div>
+                      <div class="plan-month" style="left:7.95%;width:11.74%">7月</div>
+                      <div class="plan-month" style="left:19.70%;width:11.74%">8月</div>
+                      <div class="plan-month" style="left:31.44%;width:11.36%">9月</div>
+                      <div class="plan-month" style="left:42.80%;width:11.74%">10月</div>
+                      <div class="plan-month" style="left:54.55%;width:11.36%">11月</div>
+                      <div class="plan-month" style="left:65.91%;width:11.74%">12月</div>
+                      <div class="plan-month" style="left:77.65%;width:11.74%">1月'27</div>
+                      <div class="plan-month" style="left:89.39%;width:10.61%">2月'27</div>
+                    </div>
+                  </div>
+                  <div class="plan-phase">
+                    <div class="phase-left">阶段 · PHASES</div>
+                    <div class="phase-track">
+                      <div class="phase-band" style="--c:var(--tk-eng);left:0;width:13.26%"><span>P1 · FR</span></div>
+                      <div class="phase-band" style="--c:var(--tk-ops);left:10.23%;width:32.20%"><span>P2 · EN +
+                          JP</span></div>
+                      <div class="phase-band" style="--c:#db2777;left:42.80%;width:37.12%"><span>P3 · DE + ZH</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-comp)">
+                    <div class="plan-group-name"><i></i>国内合规（青岛）</div>
+                    <div class="plan-group-note">company · filing · license · app compliance</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>公司注册 + 域名 + 服务器</b><span>6/10 → 6/18 · 8天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:0;width:3.03%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>银行 / 税务 / 社保开户</b><span>6/16 → 6/25 · 9天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:2.27%;width:3.41%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>ICP备案（管局审核）</b><span>6/23 → 7/18 · 审核完成节点</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:4.92%;width:9.47%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>公安联网备案</b><span>7/13 → 8/3</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:12.50%;width:7.95%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>微信 / 支付宝商户</b><span>7/13 → 7/22</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ops);left:12.50%;width:3.41%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>等保定级 + 测评</b><span>7/13 → 8/24 · 审核完成节点</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:12.50%;width:15.91%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>算法备案（首次）</b><span>7/13 → 9/6 · AI / 技术合规</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:12.50%;width:20.83%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>ICP 经营许可证</b><span>7/20 → 11/1 · 关键路径</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:15.15%;width:39.39%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>教育 APP 备案</b><span>8/16 → 9/21</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:25.38%;width:13.64%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>APP 备案（工信部）</b><span>9/14 → 10/12</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:36.36%;width:10.61%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task mile"><b>CN APP 首次上架</b><span>10/22 → 10/28 · 经营许可后</span></div>
+                    <div class="plan-track"><i class="plan-bar mile" style="left:50.76%;width:2.27%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 公安备案</b><span>10/28 → 11/18</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:53.03%;width:7.95%"></i></div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-ai)">
+                    <div class="plan-group-name"><i></i>合规跟进（新语言上线后）</div>
+                    <div class="plan-group-note">algorithm change · app update notices</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>EN + JP 算法变更备案</b><span>10/19 → 11/1</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ai);left:49.62%;width:4.92%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>EN + JP 教育 APP 更新通知</b><span>10/19 → 11/1</span></div>
+                    <div class="plan-track"><i class="plan-bar dashed" style="--c:var(--tk-ai);left:49.62%;width:4.92%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>DE 算法变更备案</b><span>12/29 → 1/11</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ai);left:76.52%;width:4.92%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>DE 教育 APP 更新通知</b><span>12/29 → 1/11</span></div>
+                    <div class="plan-track"><i class="plan-bar dashed" style="--c:var(--tk-ai);left:76.52%;width:4.92%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>ZH 仅海外</b><span>无需国内合规</span></div>
+                    <div class="plan-track"><i class="plan-bar muted" style="left:78.03%;width:1.14%"></i></div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-team)">
+                    <div class="plan-group-name"><i></i>香港设立</div>
+                    <div class="plan-group-note">company · bank · server · payment launch</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>HK 公司注册</b><span>6/10 → 6/12 · 2天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-team);left:0;width:.76%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>HK 银行开户</b><span>6/12 → 6/29 · 17天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-team);left:.76%;width:6.44%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>域名 + 服务器配置</b><span>6/12 → 6/15 · 3天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-team);left:.76%;width:1.14%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>Stripe / PayPal 接入</b><span>6/18 → 7/2 · 14天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ops);left:3.03%;width:5.30%"></i></div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-eng)">
+                    <div class="plan-group-name"><i></i>语言版本开发（已合并）</div>
+                    <div class="plan-group-note">development · testing · AI tuning · beta merged by language</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>法语版本 · FR</b><span>6/10 → 7/15 · HK站上线 / 国内AI联调 / CN内测</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:0;width:13.26%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>英语版本 · EN</b><span>7/7 → 9/17 · 开发测试 / AI接入 / 微调 / 内测QA / HK+CN上线</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ops);left:10.23%;width:27.27%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>日语版本 · JP</b><span>7/7 → 9/30 · 开发测试 / AI接入 / 微调 / 内测QA / HK+CN上线</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ops);left:10.23%;width:32.20%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>德语版本 · DE</b><span>10/1 → 12/11 · 开发测试 / AI接入 / 微调 / 内测QA / HK+CN上线</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:#db2777;left:42.80%;width:26.89%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>中文海外版本 · ZH</b><span>10/1 → 1/1 · 海外开发测试 / AI接入 / CSCA微调 / 仅HK上线</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:#db2777;left:42.80%;width:34.85%"></i></div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-eng)">
+                    <div class="plan-group-name"><i></i>APP 开发与上架</div>
+                    <div class="plan-group-note">app framework · language packs · store releases</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 框架 + 法语版开发</b><span>6/23 → 8/6 · 44天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:4.92%;width:16.67%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 集成 EN + JP</b><span>9/15 → 10/14 · 29天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:36.74%;width:10.98%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>CN APP 首次上架</b><span>10/22 → 10/28 · 国内上架</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:50.76%;width:2.27%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 集成 DE</b><span>12/12 → 12/29 · 17天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:70.08%;width:6.44%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 集成 ZH（仅海外）</b><span>1/2 → 1/11 · 9天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:78.03%;width:3.41%"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="keynode-grid">
+                <div class="keynode-col">
+                  <h4>审核完成节点</h4>
+                  <div class="keynode-item"><span>ICP备案</span><b>7/18</b></div>
+                  <div class="keynode-item"><span>等保测评</span><b>8/24</b></div>
+                  <div class="keynode-item"><span>算法备案（首次）</span><b>9/6</b></div>
+                  <div class="keynode-item"><span>教育 APP 备案</span><b>9/21</b></div>
+                  <div class="keynode-item"><span>APP 备案（工信部）</span><b>10/12</b></div>
+                  <div class="keynode-item"><span>ICP 经营许可证</span><b>11/1</b></div>
+                  <div class="keynode-item"><span>DE 增量合规完成</span><b>1/11</b></div>
+                </div>
+                <div class="keynode-col">
+                  <h4>网站上线节点</h4>
+                  <div class="keynode-item"><span>CN 法语版（内测）</span><b>7/18<span class="scope">国内</span></b></div>
+                  <div class="keynode-item"><span>EN 版（HK+CN）</span><b>9/17<span class="scope">双端</span></b></div>
+                  <div class="keynode-item"><span>JP 版（HK+CN）</span><b>9/30<span class="scope">双端</span></b></div>
+                  <div class="keynode-item"><span>DE 版（HK+CN）</span><b>12/11<span class="scope">双端</span></b></div>
+                  <div class="keynode-item"><span>ZH 海外版（仅 HK）</span><b>1/1<span class="scope">海外</span></b></div>
+                </div>
+                <div class="keynode-col">
+                  <h4>APP 上线节点</h4>
+                  <div class="keynode-item"><span>HK 法语 APP</span><b>8/6<span class="scope">海外</span></b></div>
+                  <div class="keynode-item"><span>HK APP（+EN+JP）</span><b>10/14<span class="scope">海外</span></b></div>
+                  <div class="keynode-item"><span>CN APP 首次上架</span><b>10/28<span class="scope">国内</span></b></div>
+                  <div class="keynode-item"><span>HK + CN APP（+DE）</span><b>12/29<span class="scope">双端</span></b></div>
+                  <div class="keynode-item"><span>HK 全语言 APP（+ZH）</span><b>1/11<span class="scope">海外</span></b></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="estimate-panel conservative">
+              <div class="estimate-head">
+                <div class="estimate-title">
+                  <b>保守估算</b>
+                  <span>Start 2026.6.10 · Deadline 2027.2.11</span>
+                </div>
+                <div class="estimate-meta">
+                  <span class="risk">预计完成 · 2027.3.2</span>
+                  <span class="risk">超出截止 · 19 天</span>
+                  <span>按较慢研发与审批节奏</span>
+                </div>
+              </div>
+              <div class="plan-gantt">
+                <div class="plan-inner">
+                  <div class="plan-axis">
+                    <div class="plan-left-head">维度 · TRACK</div>
+                    <div class="plan-scale">
+                      <div class="plan-start"></div>
+                      <div class="plan-deadline"></div>
+                      <div class="plan-pin" style="left:0">起 · 6/10</div>
+                      <div class="plan-pin deadline">截止 · 2/11</div>
+                      <div class="plan-month" style="left:0;width:7.95%">6月</div>
+                      <div class="plan-month" style="left:7.95%;width:11.74%">7月</div>
+                      <div class="plan-month" style="left:19.70%;width:11.74%">8月</div>
+                      <div class="plan-month" style="left:31.44%;width:11.36%">9月</div>
+                      <div class="plan-month" style="left:42.80%;width:11.74%">10月</div>
+                      <div class="plan-month" style="left:54.55%;width:11.36%">11月</div>
+                      <div class="plan-month" style="left:65.91%;width:11.74%">12月</div>
+                      <div class="plan-month" style="left:77.65%;width:11.74%">1月'27</div>
+                      <div class="plan-month" style="left:89.39%;width:10.61%">2月'27</div>
+                    </div>
+                  </div>
+                  <div class="plan-phase">
+                    <div class="phase-left">阶段 · PHASES</div>
+                    <div class="phase-track">
+                      <div class="phase-band" style="--c:var(--tk-eng);left:0;width:14.77%"><span>P1 · FR</span></div>
+                      <div class="phase-band" style="--c:var(--tk-ops);left:12.88%;width:35.98%"><span>P2 · EN +
+                          JP</span></div>
+                      <div class="phase-band" style="--c:#db2777;left:53.41%;width:39.39%"><span>P3 · DE + ZH</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-comp)">
+                    <div class="plan-group-name"><i></i>国内合规（青岛）</div>
+                    <div class="plan-group-note">company · filing · license · app compliance</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>公司注册 + 域名 + 服务器</b><span>6/10 → 6/17</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:0;width:2.65%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>银行 / 税务 / 社保开户</b><span>6/17 → 6/26</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:2.65%;width:3.41%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>ICP备案（管局审核）</b><span>6/26 → 7/24</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:6.06%;width:10.61%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>公安联网备案</b><span>7/21 → 8/11</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:15.53%;width:7.95%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>微信 / 支付宝商户</b><span>7/21 → 7/30</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ops);left:15.53%;width:3.41%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>等保定级 + 测评</b><span>7/21 → 9/1</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:15.53%;width:15.91%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>算法备案（首次）</b><span>7/21 → 9/26 · AI / 技术合规</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:15.53%;width:25.38%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>ICP 经营许可证</b><span>7/30 → 12/4 · 关键路径</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:18.94%;width:48.11%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>教育 APP 备案</b><span>9/1 → 10/14</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:31.44%;width:16.29%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>APP 备案（工信部）</b><span>10/7 → 11/8</span></div>
+                    <div class="plan-track"><i class="plan-bar crit" style="left:45.08%;width:12.12%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 公安备案</b><span>11/15 → 12/6</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-comp);left:59.85%;width:7.95%"></i></div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-ai)">
+                    <div class="plan-group-name"><i></i>合规跟进（新语言上线后）</div>
+                    <div class="plan-group-note">algorithm change · app update notices</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>EN + JP 算法变更备案</b><span>11/15 → 11/29</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ai);left:59.85%;width:5.30%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>EN + JP 教育 APP 更新通知</b><span>11/15 → 11/29</span></div>
+                    <div class="plan-track"><i class="plan-bar dashed" style="--c:var(--tk-ai);left:59.85%;width:5.30%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>DE 算法变更备案</b><span>2/12 → 2/26 · 超出截止</span></div>
+                    <div class="plan-track"><i class="plan-bar late" style="--c:var(--tk-ai);left:93.56%;width:5.30%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>DE 教育 APP 更新通知</b><span>2/12 → 2/26 · 超出截止</span></div>
+                    <div class="plan-track"><i class="plan-bar dashed late" style="--c:var(--tk-ai);left:93.56%;width:5.30%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>ZH 仅海外</b><span>无需国内合规</span></div>
+                    <div class="plan-track"><i class="plan-bar muted" style="left:96.59%;width:.76%"></i></div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-team)">
+                    <div class="plan-group-name"><i></i>香港设立</div>
+                    <div class="plan-group-note">company · bank · server · payment launch</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>HK 公司注册</b><span>6/10 → 6/13 · 3天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-team);left:0;width:1.14%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>HK 银行开户</b><span>6/13 → 7/4 · 21天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-team);left:1.14%;width:7.95%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>域名 + 服务器配置</b><span>6/13 → 6/17 · 4天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-team);left:1.14%;width:1.52%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>Stripe / PayPal 接入</b><span>6/20 → 7/7 · 17天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ops);left:3.79%;width:6.44%"></i></div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-eng)">
+                    <div class="plan-group-name"><i></i>语言版本开发（已合并）</div>
+                    <div class="plan-group-note">development · testing · AI tuning · beta merged by language</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>法语版本 · FR</b><span>6/10 → 7/19 · HK站上线 / 国内AI联调 / CN内测</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:0;width:14.77%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>英语版本 · EN</b><span>7/14 → 10/2 · 开发测试 / AI接入 / 微调 / 内测QA / HK+CN上线</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ops);left:12.88%;width:30.30%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>日语版本 · JP</b><span>7/14 → 10/17 · 开发测试 / AI接入 / 微调 / 内测QA / HK+CN上线</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-ops);left:12.88%;width:35.98%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>德语版本 · DE</b><span>10/29 → 1/17 · 开发测试 / AI接入 / 微调 / 内测QA / HK+CN上线</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:#db2777;left:53.41%;width:30.30%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>中文海外版本 · ZH</b><span>10/29 → 2/10 · 海外开发测试 / AI接入 / CSCA微调 / 仅HK上线</span></div>
+                    <div class="plan-track"><i class="plan-bar late" style="--c:#db2777;left:53.41%;width:39.39%"></i></div>
+                  </div>
+
+                  <div class="plan-group" style="--c:var(--tk-eng)">
+                    <div class="plan-group-name"><i></i>APP 开发与上架</div>
+                    <div class="plan-group-note">app framework · language packs · store releases</div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 框架 + 法语版开发</b><span>6/26 → 8/22 · 57天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:6.06%;width:21.59%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 集成 EN + JP</b><span>10/9 → 11/13 · 35天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:45.83%;width:13.26%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task"><b>APP 集成 DE</b><span>1/24 → 2/13 · 20天</span></div>
+                    <div class="plan-track"><i class="plan-bar" style="--c:var(--tk-eng);left:86.36%;width:7.58%"></i></div>
+                  </div>
+                  <div class="plan-row">
+                    <div class="plan-task crit"><b>APP 集成 ZH（仅海外）</b><span>2/20 → 3/2 · 超出截止</span></div>
+                    <div class="plan-track"><i class="plan-bar late" style="--c:var(--tk-eng);left:96.59%;width:3.79%"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="keynode-grid">
+                <div class="keynode-col">
+                  <h4>审核完成节点</h4>
+                  <div class="keynode-item"><span>ICP备案</span><b>7/24</b></div>
+                  <div class="keynode-item"><span>等保测评</span><b>9/1</b></div>
+                  <div class="keynode-item"><span>算法备案（首次）</span><b>9/26</b></div>
+                  <div class="keynode-item"><span>教育 APP 备案</span><b>10/14</b></div>
+                  <div class="keynode-item"><span>APP 备案（工信部）</span><b>11/8</b></div>
+                  <div class="keynode-item"><span>ICP 经营许可证</span><b>12/4</b></div>
+                  <div class="keynode-item"><span>DE 增量合规完成</span><b>2/26</b></div>
+                </div>
+                <div class="keynode-col">
+                  <h4>网站上线节点</h4>
+                  <div class="keynode-item"><span>CN 法语版（内测）</span><b>7/19<span class="scope">国内</span></b></div>
+                  <div class="keynode-item"><span>EN 版（HK+CN）</span><b>10/2<span class="scope">双端</span></b></div>
+                  <div class="keynode-item"><span>JP 版（HK+CN）</span><b>10/17<span class="scope">双端</span></b></div>
+                  <div class="keynode-item"><span>DE 版（HK+CN）</span><b>1/17<span class="scope">双端</span></b></div>
+                  <div class="keynode-item"><span>ZH 海外版（仅 HK）</span><b>2/10<span class="scope">海外</span></b></div>
+                </div>
+                <div class="keynode-col">
+                  <h4>APP 上线节点</h4>
+                  <div class="keynode-item"><span>HK 法语 APP</span><b>8/22<span class="scope">海外</span></b></div>
+                  <div class="keynode-item"><span>HK APP（+EN+JP）</span><b>11/13<span class="scope">海外</span></b></div>
+                  <div class="keynode-item"><span>HK + CN APP（+DE）</span><b>2/13<span class="scope">双端</span></b></div>
+                  <div class="keynode-item"><span>HK 全语言 APP（+ZH）</span><b>3/2<span class="scope">海外</span></b></div>
+                </div>
+              </div>
+              <div class="plan-note"><b>保守估算结论：</b>主要延误来自国内 AI/技术合规与后续语言增量备案，中文海外版与全语言 APP 会穿越 2027.2.11 截止线。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cost-note">
+          <b>成本与管理策略：</b>因为先期最大时间瓶颈和项目管理风险在国内AI/技术合规备案，前期采用轻资产项目管理和团队运营策略，减少审核瓶颈期非必要的每月固定成本开支；相应成本资源倾斜：简化审批路径提高合规效率
+        </div>
+      </div>
+    </div>
+
+    <!-- BUDGET -->
+    <div class="budget-block">
+      <div class="section-label" id="ch3">
+        <span class="num">iii.</span>
+        <span class="ttl">第三章 · 资金使用计划与成本预算</span>
+        <span class="en">Budget methodology · Year-one cost plan</span>
+        <span class="rule"></span>
+      </div>
+
+      <div class="budget-panel">
+        <div class="budget-hero">
+          <div class="budget-copy">
+            <h3>3.1 成本计算方法论</h3>
+            <p>本章所有预算数据基于 <b>基数 × 折减因子 / 缓冲因子</b> 推导，确保每项支出均可追溯至市场基数、团队能力折减、开源资产复用与合规缓冲。</p>
+            <p>香港主体以港币核算，覆盖海外研发、AI 算力、产品运营、公司合规与 C 端市场；青岛主体以人民币核算，覆盖国内研发、内容生产、AI 算力、UI/UX、运营与合规剩余项。</p>
+          </div>
+          <div class="budget-kpis">
+            <div class="budget-kpi">
+              <div class="label">Qingdao · RMB</div>
+              <div class="value cn">53.7–72.9 万</div>
+              <div class="note">青岛主体第一年年度预算</div>
+            </div>
+            <div class="budget-kpi">
+              <div class="label">Hong Kong · RMB</div>
+              <div class="value hk">52.6–58.6 万</div>
+              <div class="note">571,800–636,800 港币，按 0.92 折算</div>
+            </div>
+            <div class="budget-kpi">
+              <div class="label">Dual Entity · 12M</div>
+              <div class="value total">106.3–131.5 万</div>
+              <div class="note">双主体前 12 个月合计</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">3.1.1–3.1.8 预算推导</div>
+          <div class="en">Traceable base and adjustment logic</div>
+          <div class="tag">Methodology</div>
+        </div>
+
+        <div class="budget-method-grid">
+          <div class="budget-card">
+            <div class="idx">3.1.1</div>
+            <div>
+              <h4>香港主体 · 研发与 AI（年度，港币）</h4>
+              <p>开发、产品与 AI 研发费用基数为 <b>27.5 万–33 万港币</b>，覆盖核心功能开发、产品迭代、AI 模型接口对接与优化。AI 算力单列 <b>12 万港币</b>，包括模型研发与推理调用、自动化
+                AI 数据处理与训练流水线、openClaw 集成维护、原始语料处理清洗、项目管理工具与协作基础设施。</p>
+            </div>
+          </div>
+
+          <div class="budget-card">
+            <div class="idx">3.1.2</div>
+            <div>
+              <h4>香港主体 · 产品运营与公司合规（年度，港币）</h4>
+              <p>产品运营费用 <b>3 万港币</b>，包含服务器 / CDN、第三方服务接口、用户数据存储等运行支出。公司运营合规费用 <b>3–4 万港币</b>，涵盖人事行政、财务审计、法律咨询及硬件设备折旧。
+              </p>
+            </div>
+          </div>
+
+          <div class="budget-card">
+            <div class="idx">3.1.3</div>
+            <div>
+              <h4>香港主体 · C 端品牌建设与市场营销（年度，港币）</h4>
+              <p>以 <b>15 万港币</b> 为基数，创始团队海外多语言能力与产品运营经验折减 10%，openClaw 开发者社区与技术品牌效应折减 15%，创始人海外关系网络折减 5%。总折减率
+                30%，最终预算取整为 <b>10 万港币</b>。</p>
+              <div class="formula">15 万 × 0.70 ≈ 10.5 万 → 取整 10 万</div>
+            </div>
+          </div>
+
+          <div class="budget-card">
+            <div class="idx">3.1.4</div>
+            <div>
+              <h4>青岛主体 · 研发（年度，人民币）</h4>
+              <p>基础研发费用 <b>15–25 万人民币</b>，覆盖外包、兼职与部分全职开发人员，以及国内合规适配、AI 服务商联调及多版本并行维护。
+              </p>
+            </div>
+          </div>
+
+          <div class="budget-card">
+            <div class="idx">3.1.6</div>
+            <div>
+              <h4>青岛主体 · AI 研发与算力消耗（年度，人民币）</h4>
+              <p>第一年 AI 算力基数 <b>15–20 万人民币</b>，核算依据为五个语种各需 4–5 套模型（语音识别、语音合成、文本生成、评分 / 批改等）。结合 AI 项目管理经验、可复用教育资源数据集与
+                openClaw 自动化流水线，人工成本平均压缩 25%，最终预算 <b>10–15 万人民币</b>。</p>
+            </div>
+          </div>
+
+          <div class="budget-card">
+            <div class="idx">3.1.7</div>
+            <div>
+              <h4>青岛主体 · 其他费用（年度，人民币）</h4>
+              <p>UI/UX 设计费用 <b>5–8 万</b>，以项目制委托设计类院校学生执行，覆盖网站、APP 及官网品牌视觉规范。C 端品牌建设与市场营销 <b>10 万</b>。B
+                端合作与机构认证费用视业务进展另行确认。公司运营含人力行政 1 万、财务代理 5,000、法务顾问 3,000–5,000、硬件设备 3.5 万。</p>
+            </div>
+          </div>
+
+          <div class="budget-card">
+            <div class="idx">3.1.8</div>
+            <div>
+              <h4>其余项目补充</h4>
+              <p>香港合规其余项包括年度审计、周年申报、注册地址维护、商标注册等，按最低市场报价加 20% 缓冲，合计约 <b>16,800 港币</b>。青岛合规其余项包括等保测评、软著登记、商标注册、域名 / SSL
+                续费及应急预留，同样按最低市场报价加 20%，合计约 <b>46,200 元人民币</b>。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">3.1.5 青岛主体 · 各语种产品内容</div>
+          <div class="en">Language content cost model · RMB</div>
+          <div class="tag">Content</div>
+        </div>
+
+        <div class="budget-table-wrap">
+          <table class="budget-table">
+            <thead>
+              <tr>
+                <th>语种</th>
+                <th>市场基数</th>
+                <th>创始团队折减</th>
+                <th>教育资源折减</th>
+                <th>最终成本</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>英语版本</td>
+                <td class="amount">20,000</td>
+                <td class="factor">团队项目管理折减 30%</td>
+                <td class="factor">教育资源配合折减 30%–40%</td>
+                <td class="amount">6,000–8,000</td>
+              </tr>
+              <tr>
+                <td>日语版本</td>
+                <td class="amount">30,000</td>
+                <td class="factor">团队项目管理折减 30%</td>
+                <td class="factor">教育资源折减 30%–40%</td>
+                <td class="amount">9,000–12,000</td>
+              </tr>
+              <tr>
+                <td>法语版本</td>
+                <td class="amount">30,000</td>
+                <td class="factor">直接研发陈故宫与管理折减 50%</td>
+                <td class="factor">教育资源折减 30%–40%</td>
+                <td class="amount">2,500–3,000</td>
+              </tr>
+              <tr>
+                <td>德语版本</td>
+                <td class="amount">30,000</td>
+                <td class="factor">管理效率折减 15%</td>
+                <td class="factor">教育资源折减 35%–45%</td>
+                <td class="amount">12,000–15,000</td>
+              </tr>
+              <tr>
+                <td>中文版本</td>
+                <td class="amount">20,000</td>
+                <td class="factor">团队管理效率折减 15%</td>
+                <td class="factor">教育资源折减 35%–45%</td>
+                <td class="amount">8,000–10,000</td>
+              </tr>
+              <tr class="section-row">
+                <td colspan="4">五语种产品内容年度合计</td>
+                <td class="amount">37,500–48,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">3.2 第一年预算总览</div>
+          <div class="en">First-year budget overview</div>
+          <div class="tag">Year 1</div>
+        </div>
+
+        <div class="budget-table-wrap">
+          <table class="budget-table">
+            <thead>
+              <tr>
+                <th>主体</th>
+                <th>项目</th>
+                <th>预算</th>
+                <th>备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section-row"><td colspan="4">青岛主体（年度，人民币）</td></tr>
+              <tr><td>青岛</td><td>研发</td><td class="amount">150,000–250,000</td><td class="factor">国内合规适配、AI 服务商联调、多版本并行维护</td></tr>
+              <tr><td>青岛</td><td>产品内容（五语种）</td><td class="amount">37,500–48,000</td><td class="factor">按语种基数与折减因子推导</td></tr>
+              <tr><td>青岛</td><td>AI 研发与算力</td><td class="amount">100,000–150,000</td><td class="factor">五语种、多模型、分批迭代训练与部署</td></tr>
+              <tr><td>青岛</td><td>UI/UX 设计</td><td class="amount">50,000–80,000</td><td class="factor">产品网站、APP、官网品牌视觉规范</td></tr>
+              <tr><td>青岛</td><td>C 端市场与品牌</td><td class="amount">100,000</td><td class="factor">面向 C 端获客与品牌建设</td></tr>
+              <tr><td>青岛</td><td>运营人力 / 财务 / 法务 / 硬件</td><td class="amount">53,000–55,000</td><td class="factor">人力行政 10,000；财务 5,000；法务 3,000–5,000；硬件 35,000</td></tr>
+              <tr><td>青岛</td><td>合规剩余项</td><td class="amount">46,200</td><td class="factor">等保测评、软著登记、商标、域名 / SSL、应急预留</td></tr>
+              <tr class="section-row"><td colspan="2">青岛合计</td><td class="amount">约 53.7 万–72.9 万</td><td></td></tr>
+              <tr class="section-row"><td colspan="4">香港主体（年度，港币 → 人民币）</td></tr>
+              <tr><td>香港</td><td>研发</td><td class="amount">275,000–330,000 HKD</td><td class="factor">核心功能开发、产品迭代、AI 模型接口对接与优化</td></tr>
+              <tr><td>香港</td><td>AI 算力</td><td class="amount">120,000 HKD</td><td class="factor">推理调用、训练流水线、openClaw 集成维护与数据处理</td></tr>
+              <tr><td>香港</td><td>产品运营</td><td class="amount">30,000 HKD</td><td class="factor">服务器 / CDN、第三方接口、数据存储</td></tr>
+              <tr><td>香港</td><td>公司运营合规</td><td class="amount">30,000–40,000 HKD</td><td class="factor">人事行政、财务审计、法律咨询、硬件设备折旧</td></tr>
+              <tr><td>香港</td><td>C 端市场</td><td class="amount">100,000 HKD</td><td class="factor">15 万基数经 30% 折减后取整</td></tr>
+              <tr><td>香港</td><td>合规剩余项</td><td class="amount">16,800 HKD</td><td class="factor">年度审计、周年申报、注册地址、商标注册等</td></tr>
+              <tr class="section-row"><td colspan="2">香港合计</td><td class="amount">571,800–636,800 HKD</td><td class="factor">按汇率 0.92 折合人民币约 52.6 万–58.6 万</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="budget-totals">
+          <div class="budget-total cn">
+            <div class="name">青岛主体</div>
+            <div class="sum">53.7–72.9 万</div>
+            <div class="desc">年度，人民币；含研发、内容、AI、设计、运营与合规补充。</div>
+          </div>
+          <div class="budget-total hk">
+            <div class="name">香港主体</div>
+            <div class="sum">52.6–58.6 万</div>
+            <div class="desc">由 571,800–636,800 港币按 0.92 折算成人民币。</div>
+          </div>
+          <div class="budget-total all">
+            <div class="name">双主体合计</div>
+            <div class="sum">106.3–131.5 万</div>
+            <div class="desc">前 12 个月总预算，作为第一年资金使用计划口径。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEAM -->
+    <div class="method-block">
+      <div class="section-label" id="ch4">
+        <span class="num">第四章</span>
+        <span class="ttl">团队与职责分配</span>
+        <span class="en">Team structure · responsibilities · hiring triggers</span>
+        <span class="rule"></span>
+      </div>
+
+      <div class="method-panel">
+        <div class="budget-subhead">
+          <div class="zh">4.1 核心团队</div>
+          <div class="en">Core team and ownership</div>
+          <div class="tag">Team</div>
+        </div>
+
+        <div class="method-lede">
+          <div class="method-lede-card engine">
+            <h3>创始人 · 实际控制人与双主体大股东</h3>
+            <p>负责产品方向决策、AI 与技术架构设计、项目全流程管理及商业化推进。创始人具备多语言专业背景与海外教育行业经验，独立完成产品从 0 到 1 的规划与初期开发。</p>
+          </div>
+          <div class="method-lede-card market">
+            <h3>Jonny · 华裔澳洲籍技术顾问</h3>
+            <p>负责海外技术支持与部分开发工作，仅在香港主体参股。其职责包括优化 AI 工作流程，提高研发 / 开发效率；检测代码安全性，设计优化方案或修复建议并参与实际工作流程；根据业务需要搭建
+              SOP，协调技术团队和其他人员工作。</p>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">4.2 创始人精力分配（三阶段演进）</div>
+          <div class="en">Founder allocation by stage</div>
+          <div class="tag">Allocation</div>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>第一阶段 · 第 1–8 个月</h4>
+            <ul>
+              <li>产品密集交付期，70% 精力集中在产品研发与项目管理，确保五语言版本按节点完成开发与上线。</li>
+            </ul>
+            <div class="effort-bar">
+              <span style="--c:var(--tk-eng);width:35%"></span>
+              <span style="--c:var(--tk-ai);width:35%"></span>
+              <span style="--c:var(--tk-team);width:10%"></span>
+              <span style="--c:var(--tk-ops);width:20%"></span>
+            </div>
+            <div class="effort-legend">
+              <span><b>35%</b> 项目管理</span>
+              <span><b>35%</b> AI / 产品 / 研发</span>
+              <span><b>10%</b> 公司运营</span>
+              <span><b>20%</b> 市场与商务</span>
+            </div>
+          </div>
+
+          <div class="method-card">
+            <h4>第二阶段 · 第 8–12 个月</h4>
+            <ul>
+              <li>核心产品趋于稳定、合规体系完成搭建后，精力向运营与市场倾斜，同步推进用户增长与付费转化。</li>
+            </ul>
+            <div class="effort-bar">
+              <span style="--c:var(--tk-eng);width:30%"></span>
+              <span style="--c:var(--tk-ai);width:20%"></span>
+              <span style="--c:var(--tk-team);width:25%"></span>
+              <span style="--c:var(--tk-ops);width:25%"></span>
+            </div>
+            <div class="effort-legend">
+              <span><b>30%</b> 项目管理</span>
+              <span><b>20%</b> AI / 产品 / 研发</span>
+              <span><b>25%</b> 公司运营</span>
+              <span><b>25%</b> 市场与商务</span>
+            </div>
+          </div>
+
+          <div class="method-card">
+            <h4>第三阶段 · 第 12–20 个月</h4>
+            <ul>
+              <li>产品进入迭代维护阶段，近半精力投向用户增长、B 端机构拓展和品牌建设，为下一轮融资储备业务数据。</li>
+            </ul>
+            <div class="effort-bar">
+              <span style="--c:var(--tk-eng);width:25%"></span>
+              <span style="--c:var(--tk-ai);width:10%"></span>
+              <span style="--c:var(--tk-team);width:20%"></span>
+              <span style="--c:var(--tk-ops);width:45%"></span>
+            </div>
+            <div class="effort-legend">
+              <span><b>25%</b> 项目管理</span>
+              <span><b>10%</b> AI / 产品 / 研发</span>
+              <span><b>20%</b> 公司运营</span>
+              <span><b>45%</b> 市场与商务</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">4.3 团队扩展规划</div>
+          <div class="en">Lean hiring triggers</div>
+          <div class="tag">Hiring</div>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>MAU 触发</h4>
+            <ul>
+              <li>当月活跃用户突破 3,000 时，引入兼职社群运营人员，负责用户维护与内容互动。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>B 端触发</h4>
+            <ul>
+              <li>当 B 端合作正式启动时，按项目制或兼职方式增加商务对接角色，支持机构沟通与合作落地。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>规模与融资触发</h4>
+            <ul>
+              <li>当 DAU 超过 5,000 或营收模型初步验证时，引入半全职或全职技术人员；下一轮融资完成后，正式组建市场负责人和运营负责人在内的核心管理层。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EQUITY -->
+    <div class="method-block">
+      <div class="section-label" id="ch5">
+        <span class="num">第五章</span>
+        <span class="ttl">合作模式与股权架构</span>
+        <span class="en">Operating model · equity structure · financing</span>
+        <span class="rule"></span>
+      </div>
+
+      <div class="method-panel">
+        <div class="method-lede">
+          <div class="method-lede-card engine">
+            <h3>双主体并行架构</h3>
+            <p>项目采用青岛-香港双主体并行架构：青岛公司专注中国大陆市场的产品运营与商业化；香港公司覆盖港澳台及海外市场。两家公司财务独立、数据不互通，共享同一套项目管理、产品体系与技术路径。</p>
+            <div class="share-pills">
+              <span>financially independent</span>
+              <span>shared product stack</span>
+              <span>shared technical path</span>
+            </div>
+          </div>
+          <div class="method-lede-card market">
+            <h3>天使轮融资总额</h3>
+            <p>本次天使轮融资计划总额 <b>150 万人民币</b>，由教育行业资深高管领投，北京及青岛投资人跟投，资金将用于 12-14 个月产品研发周期的第一年核心投入，包括五语种产品上线、AI 模型训练迭代、用户冷启动及品牌建设。</p>
+            <div class="share-pills">
+              <span>150万 RMB</span>
+              <span>12-14 months runway</span>
+              <span>year-one core spend</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">5.1 双主体注册资本与融资结构</div>
+          <div class="en">Registered capital and angel allocation</div>
+          <div class="tag">Structure</div>
+        </div>
+
+        <div class="budget-table-wrap">
+          <table class="budget-table">
+            <thead>
+              <tr>
+                <th>主体</th>
+                <th>注册资本</th>
+                <th>股权安排</th>
+                <th>法定代表人 / 备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>青岛主体</td><td>100 万人民币</td><td>创始人持有 75%–80%</td><td>创始人股份由信任亲属代持并担任法定代表人</td></tr>
+              <tr><td>香港主体</td><td>25 万人民币等值港币</td><td>创始人持有 75%–80%</td><td>创始人本人担任法定代表人和登记股东</td></tr>
+              <tr class="section-row"><td colspan="4">本轮天使融资结构</td></tr>
+              <tr><td>总额</td><td>150 万人民币</td><td>两个主体各释放 15%–20% 股权</td><td>资金均等注入两家公司，各约 75 万</td></tr>
+              <tr><td>投资人身份</td><td colspan="3">以自然人身份直接入股两个主体，持股比例在两家公司间对等</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">5.2 天使投资人构成</div>
+          <div class="en">Angel investor mix</div>
+          <div class="tag">Investors</div>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>教育集团高管（领投）</h4>
+            <ul>
+              <li>以个人名义投资，承担战略资源导入角色，为本轮最大份额出资方。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>北京投资人</h4>
+            <ul>
+              <li>以自然人身份入股，投资额以 40–60 万人民币为限，参与两个主体的对等持股。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>青岛财务投资人</h4>
+            <ul>
+              <li>认购 20 万人民币，分别注入青岛与香港主体，补充早期资金与本地资源。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">5.3 技术顾问持股与期权池</div>
+          <div class="en">Advisory equity and option reserve</div>
+          <div class="tag">Governance</div>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>Jonny 持股安排</h4>
+            <ul>
+              <li>Jonny（华裔澳洲籍）担任项目技术顾问及海外技术相关负责人，仅在香港主体持有 2%–3% 股份，初期以技术出资形式认定。</li>
+              <li>后续根据项目里程碑完成度与个人业绩贡献，持股比例最高可调增至不超过 5%，调增机制由创始人与投资人共同评定。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>期权池</h4>
+            <ul>
+              <li>两个主体各预留 5% 期权池，用于后续核心团队成员激励。</li>
+              <li>本轮不实际发放，待 A 轮前根据团队扩展情况启动分配。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>治理原则</h4>
+            <ul>
+              <li>双主体财务独立、数据不互通，技术与产品路径统一管理，融资与股权安排优先服务产品交付和市场推进。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INVESTOR RIGHTS -->
+    <div class="method-block">
+      <div class="section-label" id="ch7">
+        <span class="num">第七章</span>
+        <span class="ttl">投资人权益与创始人义务</span>
+        <span class="en">Investor rights · founder obligations</span>
+        <span class="rule"></span>
+      </div>
+
+      <div class="method-panel">
+        <div class="budget-subhead">
+          <div class="zh">7.1 投资人权益</div>
+          <div class="en">Investor rights</div>
+          <div class="tag">Rights</div>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>信息披露权</h4>
+            <ul>
+              <li>创始人按季度向全体投资人提供财务摘要与业务进展报告，包括用户数据、营收情况及关键里程碑完成状态。</li>
+              <li>重大事项（单笔超过 15 万元的非常规支出、关联交易、新一轮融资条款）事前通报。</li>
+              <li>投资人有权查阅经审计的年度财务报表。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>优先权</h4>
+            <ul>
+              <li>本轮投资人享有后续融资轮次的按比例优先认购权（Pro-rata Right）。</li>
+              <li>如公司发生控制权变更或资产出售，投资人享有与创始人同等条件的共同出售权（Tag-along Right）。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>反稀释保护</h4>
+            <ul>
+              <li>如后续轮次估值低于本轮估值（即出现 Down Round），本轮投资人持股比例按加权平均法进行反稀释调整。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">7.2 创始人义务</div>
+          <div class="en">Founder obligations</div>
+          <div class="tag">Duties</div>
+        </div>
+
+        <div class="method-lede">
+          <div class="method-lede-card engine">
+            <h3>投入与竞业承诺</h3>
+            <p>创始人将本项目作为核心事业方向，按照第四章所述三阶段精力分配模型持续推进产品交付、公司运营与市场拓展。创始人承诺在项目存续期间不从事与本项目直接竞争的业务活动。</p>
+          </div>
+          <div class="method-lede-card market">
+            <h3>关联交易与里程碑通报</h3>
+            <p>涉及双主体之间或与创始人关联方之间的交易，遵循公允定价原则，并事前向投资人披露。如项目核心里程碑出现超过 30 个工作日的重大延迟，创始人应主动向投资人通报原因及调整方案。</p>
+          </div>
+        </div>
+
+        <div class="method-card">
+          <h4>创始人股权锁定</h4>
+          <ul>
+            <li>创始人持有的股权自公司设立之日起锁定 36 个月，在第 12、24、36 个月各解锁三分之一。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- STRATEGIC -->
+    <div class="method-block">
+      <div class="section-label" id="ch8">
+        <span class="num">第八章</span>
+        <span class="ttl">对投资人合作战略期望</span>
+        <span class="en">Strategic support expectations</span>
+        <span class="rule"></span>
+      </div>
+
+      <div class="method-panel">
+        <div class="method-lede">
+          <div class="method-lede-card engine">
+            <h3>资金之外的战略资源</h3>
+            <p>本轮融资除资金注入外，重点寻求投资人在企业运营、教育资源、初期客群、机构对接及后期资本运作等维度提供战略资源支持。</p>
+          </div>
+          <div class="method-lede-card market">
+            <h3>早期验证与规模化路径</h3>
+            <p>项目期望通过投资人的行业经验与真实教育场景资源，降低冷启动阶段获客成本，缩短 B 端合作周期，并为后续融资建立更清晰的增长证据。</p>
+          </div>
+        </div>
+
+        <div class="budget-subhead">
+          <div class="zh">8.1 合作战略期望</div>
+          <div class="en">Strategic support</div>
+          <div class="tag">Support</div>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h4>第一，企业运营指导</h4>
+            <ul>
+              <li>教育集团高管背景的领投人在公司治理、团队管理及业务拓展方面具有丰富实操经验，项目期望获得定期的运营策略指导，尤其在从 0 到 1 阶段的组织建设与流程搭建上。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>第二，教育资源与 AI 研发配合</h4>
+            <ul>
+              <li>投资人如具备语言教育类数据资源、教学内容素材或师资网络，可在产品打磨阶段进行适当倾斜配合。</li>
+              <li>包括但不限于：真实教学场景数据用于 AI 模型训练、教师参与产品内测反馈、学生群体作为早期用户验证产品体验。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>第三，初期客群投放与冷启动</h4>
+            <ul>
+              <li>投资人所在教育机构的学生与家长群体是产品的天然目标用户。期望在产品上线初期，通过投资人渠道进行小规模定向推广，降低冷启动阶段的获客成本并快速获得真实使用数据。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>第四，教育机构资源对接</h4>
+            <ul>
+              <li>项目在 B 端业务拓展阶段需要与语言培训机构、高校外语院系、留学机构建立合作关系。投资人的行业网络可显著缩短机构合作的对接周期，协助制定标准化 toB 方案并推动落地。</li>
+            </ul>
+          </div>
+          <div class="method-card">
+            <h4>第五，后期资本运作</h4>
+            <ul>
+              <li>项目在 A 轮及以后的融资阶段，需要投资人在投资圈层的资源支持，包括优质基金推荐、融资策略建议以及可能的财务顾问角色。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RISK -->
+    <div class="method-block">
+      <div class="section-label" id="ch9">
+        <span class="num">第九章</span>
+        <span class="ttl">风险提示</span>
+        <span class="en">Risk notice</span>
+        <span class="rule"></span>
+      </div>
+
+      <div class="method-panel">
+        <div class="method-card">
+          <h4>天使阶段核心风险</h4>
+          <ul>
+            <li>本项目处于天使阶段，产品开发进度可能因技术难度、AI 模型效果或合规审批流程导致延迟。</li>
+            <li>双主体跨境架构增加运营复杂度与合规成本。</li>
+            <li>早期依赖创始团队个人能力，存在单点风险。</li>
+            <li>语言教育市场存在政策变动风险。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="foot-left">
+        <div class="lh"><em>LangHub · Partnership &amp; Financing Term Sheet</em></div>
+        <div class="lh-cn">LangPrepHub 合作融资意向书 · 青岛 + 香港双主体 · 天使轮 150 万人民币 · 仅供受邀投资人阅读</div>
+      </div>
+      <div class="foot-right">
+        <div class="pg"><b>CONFIDENTIAL</b> · v3.0 · 2026.06</div>
+        <div class="pg">本文件不构成要约或邀约 · 最终条款以签署协议为准</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    /* ───── PASSWORD GATE ───── */
+    (() => {
+      const PASSCODE = '1126'; // 硬编码 4 位密码，如需更改请替换此字符串
+      const gate = document.getElementById('pwGate');
+      const form = document.getElementById('pwForm');
+      const inputs = Array.from(document.querySelectorAll('#pwInputs input'));
+      const inputsWrap = document.getElementById('pwInputs');
+      const errorMsg = document.getElementById('pwError');
+
+      // Focus first input on load
+      setTimeout(() => { if (inputs[0]) inputs[0].focus(); }, 300);
+
+      const showError = () => {
+        inputsWrap.classList.add('pw-error');
+        errorMsg.classList.add('show');
+        setTimeout(() => {
+          inputsWrap.classList.remove('pw-error');
+          inputs.forEach(i => i.value = '');
+          inputs[0].focus();
+        }, 420);
+      };
+
+      const hideError = () => {
+        errorMsg.classList.remove('show');
+      };
+
+      const getValue = () => inputs.map(i => i.value).join('');
+
+      const submit = () => {
+        if (getValue() === PASSCODE) {
+          gate.classList.add('pw-hide');
+          document.body.classList.remove('pw-locked');
+          setTimeout(() => gate.remove(), 450);
+        } else {
+          showError();
+        }
+      };
+
+      inputs.forEach((input, idx) => {
+        input.addEventListener('input', (e) => {
+          const v = e.target.value.replace(/\D/g, '');
+          e.target.value = v.slice(-1);
+          hideError();
+          if (e.target.value && idx < inputs.length - 1) {
+            inputs[idx + 1].focus();
+          }
+          if (idx === inputs.length - 1 && getValue().length === 4) {
+            // auto-check when fully filled, but do not submit; user still clicks button
+          }
+        });
+
+        input.addEventListener('keydown', (e) => {
+          if (e.key === 'Backspace' && !input.value && idx > 0) {
+            inputs[idx - 1].focus();
+            inputs[idx - 1].value = '';
+          } else if (e.key === 'ArrowLeft' && idx > 0) {
+            inputs[idx - 1].focus();
+          } else if (e.key === 'ArrowRight' && idx < inputs.length - 1) {
+            inputs[idx + 1].focus();
+          } else if (e.key === 'Enter') {
+            e.preventDefault();
+            submit();
+          }
+        });
+
+        input.addEventListener('paste', (e) => {
+          e.preventDefault();
+          const pasted = (e.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '').slice(0, 4);
+          pasted.split('').forEach((ch, i) => {
+            if (inputs[i]) inputs[i].value = ch;
+          });
+          hideError();
+          const nextEmpty = inputs.findIndex(i => !i.value);
+          if (nextEmpty >= 0) inputs[nextEmpty].focus();
+          else inputs[inputs.length - 1].focus();
+        });
+
+        input.addEventListener('focus', (e) => e.target.select());
+      });
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        submit();
+      });
+    })();
+
+    /* ───── GANTT TOOLTIP ───── */
+    (() => {
+      const tooltip = document.createElement('div');
+      tooltip.className = 'gantt-tooltip';
+      document.body.appendChild(tooltip);
+
+      const parseDateRange = (text) => {
+        const m = text.match(/(\d{1,2})\/(\d{1,2})\s*→\s*(\d{1,2})\/(\d{1,2})/);
+        if (!m) return null;
+        const sm = Number(m[1]);
+        const sd = Number(m[2]);
+        const em = Number(m[3]);
+        const ed = Number(m[4]);
+        const sy = sm >= 6 ? 2026 : 2027;
+        const ey = em < sm ? sy + 1 : sy;
+        const start = new Date(sy, sm - 1, sd);
+        const end = new Date(ey, em - 1, ed);
+        return Math.round((end - start) / 86400000);
+      };
+
+      const moveTooltip = (event) => {
+        const pad = 14;
+        const maxLeft = window.innerWidth - tooltip.offsetWidth - 12;
+        const left = Math.max(12, Math.min(event.clientX + pad, maxLeft));
+        const top = Math.max(12, event.clientY - tooltip.offsetHeight - pad);
+        tooltip.style.left = `${left}px`;
+        tooltip.style.top = `${top}px`;
+      };
+
+      document.querySelectorAll('.plan-bar').forEach((bar) => {
+        const row = bar.closest('.plan-row');
+        const name = row?.querySelector('.plan-task b')?.textContent.trim() || '任务';
+        const meta = row?.querySelector('.plan-task span')?.textContent.trim() || '';
+        const days = parseDateRange(meta);
+        const hasDays = /\d+\s*天/.test(meta);
+        bar.addEventListener('mouseenter', (event) => {
+          tooltip.innerHTML = `<b>${name}</b><span>${meta}${days !== null && !hasDays ? ` · ${days}天` : ''}</span>`;
+          tooltip.style.display = 'block';
+          moveTooltip(event);
+        });
+        bar.addEventListener('mousemove', moveTooltip);
+        bar.addEventListener('mouseleave', () => {
+          tooltip.style.display = 'none';
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
