@@ -547,10 +547,6 @@
     .toc-item.ch2 { --c: var(--tk-eng) }
     .toc-item.ch3 { --c: var(--tk-comp) }
     .toc-item.ch4 { --c: var(--tk-team) }
-    .toc-item.ch5 { --c: var(--tk-ai) }
-    .toc-item.ch7 { --c: var(--tk-ops) }
-    .toc-item.ch8 { --c: var(--tk-eng) }
-    .toc-item.ch9 { --c: var(--crit) }
 
     .toc-item .num {
       font-family: var(--serif-en);
@@ -788,10 +784,7 @@
     #ch1,
     #ch2,
     #ch3,
-    #ch4,
-    #ch5,
-    #ch6,
-    #ch7 {
+    #ch4 {
       scroll-margin-top: 18px;
     }
 
@@ -9270,6 +9263,344 @@
       }
     }
 
+    /* SPECIAL INVESTOR EDITION · DISTRIBUTION STRATEGY V2 */
+    .market-report .lp-distribution-section {
+      --distribution-accent: var(--tk-ai);
+      background:
+        linear-gradient(90deg, rgba(13, 148, 136, .026) 1px, transparent 1px),
+        var(--bg-paper);
+      background-size: 96px 100%;
+    }
+
+    .market-report .lp-distribution-global {
+      --distribution-accent: var(--tk-eng);
+      background:
+        linear-gradient(90deg, rgba(67, 56, 202, .022) 1px, transparent 1px),
+        var(--bg-card);
+      background-size: 96px 100%;
+    }
+
+    .market-report .lp-distribution-head {
+      display: grid;
+      grid-template-columns: minmax(180px, .42fr) minmax(0, 1.58fr);
+      gap: 12px 42px;
+      align-items: start;
+      margin-bottom: 34px;
+      padding: 0 0 26px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .market-report .lp-distribution-eyebrow {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 42px;
+      padding: 10px 12px;
+      color: var(--distribution-accent);
+      border: 1px solid currentColor;
+      font-family: var(--mono);
+      font-size: 9px;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: .13em;
+    }
+
+    .market-report .lp-distribution-eyebrow i {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      font-size: 17px;
+      line-height: 1;
+      background: color-mix(in srgb, var(--distribution-accent) 8%, transparent);
+    }
+
+    .market-report .lp-distribution-head h2 {
+      grid-column: 2;
+      margin: 0;
+      max-width: 880px;
+      color: var(--ink);
+      font-size: clamp(30px, 3.2vw, 44px);
+      line-height: 1.25;
+    }
+
+    .market-report .lp-distribution-head > p {
+      grid-column: 2;
+      max-width: 880px;
+      margin: 0;
+      color: var(--ink-3);
+      font-size: 13px;
+      line-height: 1.85;
+    }
+
+    .market-report .lp-distribution-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      margin: 0 0 22px;
+      border: 1px solid var(--line);
+      background: rgba(253, 250, 242, .72);
+    }
+
+    .market-report .lp-distribution-metric {
+      min-width: 0;
+      min-height: 166px;
+      padding: 25px 24px;
+      text-align: left;
+      border: 0;
+      border-right: 1px solid var(--line);
+      border-top: 3px solid var(--distribution-accent);
+      background: transparent;
+    }
+
+    .market-report .lp-distribution-metric:last-child {
+      border-right: 0;
+    }
+
+    .market-report .lp-distribution-metric .lp-stat,
+    .market-report .lp-distribution-metric .lp-stat-gold,
+    .market-report .lp-distribution-metric .lp-stat-purple {
+      margin-bottom: 9px;
+      color: var(--distribution-accent);
+      font-family: var(--serif-en);
+      font-size: clamp(30px, 3.1vw, 42px);
+      line-height: 1;
+      letter-spacing: -.03em;
+    }
+
+    .market-report .lp-distribution-metric p {
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .market-report .lp-distribution-metric p + p {
+      margin-top: 6px;
+    }
+
+    .market-report .lp-distribution-stack {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+      margin-top: 0;
+    }
+
+    .market-report .lp-distribution-path,
+    .market-report .lp-distribution-cost {
+      min-width: 0;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--distribution-accent);
+      background: rgba(253, 250, 242, .82);
+    }
+
+    .market-report .lp-distribution-path h3,
+    .market-report .lp-distribution-cost h3 {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin: 0 0 18px;
+      color: var(--ink);
+      font-size: 21px;
+    }
+
+    .market-report .lp-distribution-path ul {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      color: var(--ink-3);
+      list-style: none;
+      border: 1px solid var(--line-soft);
+    }
+
+    .market-report .lp-distribution-path li {
+      min-width: 0;
+      padding: 17px 16px 18px;
+      border-right: 1px solid var(--line-soft);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .market-report .lp-distribution-path li:last-child {
+      border-right: 0;
+    }
+
+    .market-report .lp-distribution-path li strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--distribution-accent);
+      font-family: var(--serif-cn);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .market-report .lp-distribution-table-wrap {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--line-soft);
+    }
+
+    .market-report .lp-table-scroll-hint {
+      display: none;
+      margin: -7px 0 10px;
+      color: var(--distribution-accent);
+      font-family: var(--mono);
+      font-size: 8px;
+      line-height: 1.4;
+      letter-spacing: .08em;
+    }
+
+    .market-report .lp-distribution-table-wrap table {
+      width: 100%;
+      min-width: 720px;
+      margin: 0;
+      table-layout: fixed;
+      font-size: 12px;
+    }
+
+    .market-report .lp-distribution-table-wrap th:nth-child(1),
+    .market-report .lp-distribution-table-wrap td:nth-child(1) { width: 30% }
+    .market-report .lp-distribution-table-wrap th:nth-child(2),
+    .market-report .lp-distribution-table-wrap td:nth-child(2) { width: 20% }
+    .market-report .lp-distribution-table-wrap th:nth-child(3),
+    .market-report .lp-distribution-table-wrap td:nth-child(3) { width: 50% }
+
+    .market-report .lp-distribution-table-wrap th {
+      padding: 13px 14px;
+      color: #fdfaf2;
+      background: var(--ink);
+      border-color: rgba(255, 255, 255, .12);
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: .08em;
+    }
+
+    .market-report .lp-distribution-table-wrap td {
+      padding: 14px;
+      color: var(--ink-2);
+      line-height: 1.55;
+    }
+
+    .market-report .lp-distribution-table-wrap .lp-total-row td {
+      color: var(--ink);
+      background: color-mix(in srgb, var(--distribution-accent) 9%, var(--bg-card));
+      border-bottom: 3px solid var(--distribution-accent);
+    }
+
+    .market-report .lp-distribution-advantages {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      margin: 16px 0 0;
+      border: 1px solid var(--line);
+    }
+
+    .market-report .lp-distribution-advantages .lp-card {
+      border: 0;
+      border-right: 1px solid var(--line);
+      border-top: 3px solid var(--distribution-accent);
+    }
+
+    .market-report .lp-distribution-advantages .lp-card:last-child {
+      border-right: 0;
+    }
+
+    .market-report .lp-distribution-conclusion {
+      margin-top: 16px;
+      border-left-color: var(--distribution-accent);
+      background: color-mix(in srgb, var(--distribution-accent) 5%, var(--bg-card));
+    }
+
+    @media (max-width: 900px) {
+      .market-report .lp-distribution-head {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .market-report .lp-distribution-eyebrow,
+      .market-report .lp-distribution-head h2,
+      .market-report .lp-distribution-head > p {
+        grid-column: 1;
+        grid-row: auto;
+      }
+
+      .market-report .lp-distribution-eyebrow {
+        width: fit-content;
+      }
+
+      .market-report .lp-distribution-path ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .market-report .lp-distribution-path li:nth-child(2) {
+        border-right: 0;
+      }
+
+      .market-report .lp-distribution-path li:nth-child(-n+2) {
+        border-bottom: 1px solid var(--line-soft);
+      }
+
+      .market-report .lp-table-scroll-hint {
+        display: block;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .market-report .lp-distribution-metrics,
+      .market-report .lp-distribution-advantages {
+        grid-template-columns: 1fr;
+      }
+
+      .market-report .lp-distribution-metric,
+      .market-report .lp-distribution-advantages .lp-card {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .market-report .lp-distribution-metric:last-child,
+      .market-report .lp-distribution-advantages .lp-card:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .market-report .lp-distribution-head {
+        margin-bottom: 24px;
+        padding-bottom: 22px;
+      }
+
+      .market-report .lp-distribution-head h2 {
+        font-size: 28px;
+      }
+
+      .market-report .lp-distribution-metric,
+      .market-report .lp-distribution-path,
+      .market-report .lp-distribution-cost {
+        padding: 20px 18px;
+      }
+
+      .market-report .lp-distribution-path ul {
+        grid-template-columns: 1fr;
+      }
+
+      .market-report .lp-distribution-path li,
+      .market-report .lp-distribution-path li:nth-child(2) {
+        border-right: 0;
+        border-bottom: 1px solid var(--line-soft);
+      }
+
+      .market-report .lp-distribution-path li:last-child {
+        border-bottom: 0;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       .market-report .lp-dossier-cover.lp-cover-motion-ready .lp-cover-index,
       .market-report .lp-dossier-cover.lp-cover-motion-ready .lp-cover-content > *,
@@ -9349,7 +9680,7 @@
 
         <div class="pw-notice">
           <span class="lbl">保密声明 · Confidentiality Notice</span>
-          基于对投资人个人信息与项目整体商业机密的保护，<b>输入密码并点击"确认进入"</b>即视为阁下已阅读并同意本文件仅限本人阅读参考。<b>未经创始团队书面同意，不得以任何形式向第三方披露、复制、转发或传播本意向书之任何内容</b>；如因违反本条款导致本项目遭受商誉、商业机密或融资进程上的损害，阁下须就相关损失承担全部责任。
+          基于对项目商业机密与融资信息的保护，<b>输入密码并点击"确认进入"</b>即视为阁下已阅读并同意本文件仅限本人阅读参考。<b>未经创始团队书面同意，不得以任何形式向第三方披露、复制、转发或传播本意向书之任何内容</b>；如因违反本条款导致本项目遭受商誉、商业机密或融资进程上的损害，阁下须就相关损失承担全部责任。
         </div>
 
         <button type="submit" class="pw-btn">
@@ -9450,7 +9781,7 @@
         <section class="toc-group execution">
           <header>
             <span class="toc-group-num">05</span>
-            <div><h3>项目核心执行计划</h3><p>Execution · budget · governance · rights</p></div>
+            <div><h3>项目核心执行计划</h3><p>Methodology · rollout · budget · team</p></div>
           </header>
           <div class="toc-links">
             <a href="#core-execution-plan"><b>总览</b><span>执行计划主题与阅读口径</span></a>
@@ -9458,9 +9789,6 @@
             <a href="#ch2"><b>二</b><span>六轨道全周期 · 五语言落地</span></a>
             <a href="#ch3"><b>三</b><span>资金使用计划与成本预算</span></a>
             <a href="#ch4"><b>四</b><span>团队与职责分配</span></a>
-            <a href="#ch5"><b>五</b><span>合作模式与股权架构</span></a>
-            <a href="#ch6"><b>六</b><span>治理机制与长期激励</span></a>
-            <a href="#ch7"><b>七</b><span>投资人权益与创始人义务</span></a>
           </div>
         </section>
 
@@ -12810,7 +13138,7 @@
           <ul style="font-size:.88rem;color:var(--sub);padding-left:18px;">
             <li>日语(高考55万+JLPT词汇) + 德语(歌德110万+telc 35万)</li>
             <li>俄语(TORFL+高考俄语增长中)</li>
-            <li>教育机构投资人助力B2B渠道</li>
+            <li>教育机构合作渠道助力 B2B 落地</li>
             <li>获得语言考试官方认证/权威教育机构认证</li>
             <li>原生APP + 东南亚北美投放</li>
             <li>目标：20,000+付费用户</li>
@@ -12928,36 +13256,34 @@
 
 
   <!-- ============ 国内市场分发策略 ============ -->
-  <div class="lp-section lp-section-light" id="bp-distribution-cn">
+  <div class="lp-section lp-section-light lp-distribution-section lp-distribution-cn" id="bp-distribution-cn">
     <div class="lp-container">
-      <div class="lp-section-title-bar" style="background:linear-gradient(135deg,#1a4a3e,var(--dark));">
-        <i class="ri-route-line"></i>
-        <h2 style="color:#fff;">国内市场策略：从高考小语种切入，低 CAC 建立第一批付费样本</h2>
-      </div>
-      <p class="lp-subtitle" style="line-height:1.7;">
-        国内优先选择“需求强、工具少、老师贵”的小语种考试场景。核心不是大规模烧广告，而是通过微信生态、内容种草、老师/机构渠道和考试节点运营，把获客成本压到纯投放模式以下。
-      </p>
+      <header class="lp-distribution-head">
+        <div class="lp-distribution-eyebrow"><i class="ri-route-line"></i><span>CHINA · GO-TO-MARKET</span></div>
+        <h2>国内市场策略：从高考小语种切入，低 CAC 建立第一批付费样本</h2>
+        <p>国内优先选择“需求强、工具少、老师贵”的小语种考试场景。核心不是大规模烧广告，而是通过微信生态、内容种草、老师/机构渠道和考试节点运营，把获客成本压到纯投放模式以下。</p>
+      </header>
 
-      <div class="lp-grid3" style="margin-top:24px;">
-        <div class="lp-card" style="border-top:4px solid var(--accent);text-align:center;">
+      <div class="lp-grid3 lp-distribution-metrics">
+        <div class="lp-card lp-distribution-metric">
           <div class="lp-stat">¥6-14</div>
           <p style="font-weight:700;">目标混合 CAC / 付费用户</p>
           <p style="font-size:.82rem;color:var(--sub);">早期国内 C 端 + B2B 机构渠道混合测算</p>
         </div>
-        <div class="lp-card" style="border-top:4px solid var(--gold);text-align:center;">
+        <div class="lp-card lp-distribution-metric">
           <div class="lp-stat-gold" style="font-size:2.2rem;font-weight:800;">40-70%</div>
           <p style="font-weight:700;">相对纯信息流投放降本</p>
           <p style="font-size:.82rem;color:var(--sub);">依靠垂直考试内容、私域转化和机构批量导入</p>
         </div>
-        <div class="lp-card" style="border-top:4px solid var(--purple);text-align:center;">
+        <div class="lp-card lp-distribution-metric">
           <div class="lp-stat-purple" style="font-size:2.2rem;font-weight:800;">2-4个月</div>
           <p style="font-weight:700;">目标 CAC 回收期</p>
           <p style="font-size:.82rem;color:var(--sub);">按 ¥49.9-59.9/月会员价及充值版毛利估算</p>
         </div>
       </div>
 
-      <div class="lp-grid2" style="margin-top:24px;">
-        <div class="lp-card" style="border-left:4px solid var(--accent);">
+      <div class="lp-distribution-stack">
+        <div class="lp-card lp-distribution-path">
           <h3><i class="ri-wechat-line lp-icon-flat lp-accent"></i> 渠道打法</h3>
           <ul style="font-size:.9rem;color:var(--sub);line-height:1.9;padding-left:18px;">
             <li><strong>微信小程序首发：</strong>缩短注册、支付、分享路径，避开安卓应用商店碎片化。</li>
@@ -12966,9 +13292,10 @@
             <li><strong>私域复购：</strong>学习记录和 AI 导师记忆提高迁移成本，降低二次获客压力。</li>
           </ul>
         </div>
-        <div class="lp-card" style="border-left:4px solid var(--gold);">
+        <div class="lp-card lp-distribution-cost">
           <h3><i class="ri-calculator-line lp-icon-flat lp-gold"></i> 获客成本拆分（内部目标）</h3>
-          <div style="overflow-x:auto;">
+          <p class="lp-table-scroll-hint">左右滑动查看完整表格 →</p>
+          <div class="lp-distribution-table-wrap">
             <table style="font-size:.85rem;">
               <thead>
                 <tr>
@@ -12991,7 +13318,7 @@
                 <tr>
                   <td>机构/B2B 批量导入</td>
                   <td>¥2.5-8/学生</td>
-                  <td>投资人教育资源 + 机构增效诉求</td>
+                  <td>教育机构合作资源 + 机构增效诉求</td>
                 </tr>
                 <tr>
                   <td>信息流测试投放</td>
@@ -13009,7 +13336,7 @@
         </div>
       </div>
 
-      <div class="lp-note-box" style="margin-top:24px;">
+      <div class="lp-note-box lp-distribution-conclusion">
         <strong><i class="ri-key-line lp-icon-flat"></i> 国内策略判断：</strong>
         先从高考日语、JLPT、德语/法语写作口语等“付费意愿明确 + 供给不足”的人群切入，用低价高频功能建立学习记录，再通过 AI 导师、词汇/变位训练和考试冲刺包提升留存与 ARPU。
         上述 CAC 为早期经营目标区间，需通过小规模投放和机构试点持续校准。
@@ -13018,37 +13345,34 @@
   </div>
 
   <!-- ============ 海外市场分发策略 ============ -->
-  <div class="lp-section lp-section-white" id="bp-distribution-global">
+  <div class="lp-section lp-section-white lp-distribution-section lp-distribution-global" id="bp-distribution-global">
     <div class="lp-container">
-      <div class="lp-section-title-bar" style="background:linear-gradient(135deg,#2d2b55,var(--dark));">
-        <i class="ri-global-line"></i>
-        <h2 style="color:#fff;">海外市场策略：避开英语红海，切入非英语考试与移民学习场景</h2>
-      </div>
-      <p class="lp-subtitle" style="line-height:1.7;">
-        海外不以“通用语言学习 App”正面硬碰 Duolingo / Babbel，而是围绕 DELF、Goethe、TOPIK、DELE、HSK、AP 外语等考试场景做长尾获客。产品全栈覆盖写作、口语、词汇和 AI
-        导师，适合用免费评测/学习报告完成低成本转化。
-      </p>
+      <header class="lp-distribution-head">
+        <div class="lp-distribution-eyebrow"><i class="ri-global-line"></i><span>GLOBAL · GO-TO-MARKET</span></div>
+        <h2>海外市场策略：避开英语红海，切入非英语考试与移民学习场景</h2>
+        <p>海外不以“通用语言学习 App”正面硬碰 Duolingo / Babbel，而是围绕 DELF、Goethe、TOPIK、DELE、HSK、AP 外语等考试场景做长尾获客。产品全栈覆盖写作、口语、词汇和 AI 导师，适合用免费评测/学习报告完成低成本转化。</p>
+      </header>
 
-      <div class="lp-grid3" style="margin-top:24px;">
-        <div class="lp-card" style="border-top:4px solid var(--purple);text-align:center;">
+      <div class="lp-grid3 lp-distribution-metrics">
+        <div class="lp-card lp-distribution-metric">
           <div class="lp-stat-purple" style="font-size:2.2rem;font-weight:800;">$4-12.5</div>
           <p style="font-weight:700;">目标混合 CAC / 付费用户</p>
           <p style="font-size:.82rem;color:var(--sub);">SEO + 社群 + 创作者 + 小额投放混合测算</p>
         </div>
-        <div class="lp-card" style="border-top:4px solid var(--gold);text-align:center;">
+        <div class="lp-card lp-distribution-metric">
           <div class="lp-stat-gold" style="font-size:2.2rem;font-weight:800;">40-65%</div>
           <p style="font-weight:700;">相对纯 Google/Meta 投放降本</p>
           <p style="font-size:.82rem;color:var(--sub);">用考试长尾内容和免费评测降低首触成本</p>
         </div>
-        <div class="lp-card" style="border-top:4px solid var(--accent);text-align:center;">
+        <div class="lp-card lp-distribution-metric">
           <div class="lp-stat" style="font-size:2.2rem;">2-5个月</div>
           <p style="font-weight:700;">目标 CAC 回收期</p>
           <p style="font-size:.82rem;color:var(--sub);">按 $9.99-14.99/月订阅价和考试冲刺需求估算</p>
         </div>
       </div>
 
-      <div class="lp-grid2" style="margin-top:24px;">
-        <div class="lp-card" style="border-left:4px solid var(--purple);">
+      <div class="lp-distribution-stack">
+        <div class="lp-card lp-distribution-path">
           <h3><i class="ri-compass-3-line lp-icon-flat lp-purple"></i> 市场进入顺序</h3>
           <ul style="font-size:.9rem;color:var(--sub);line-height:1.9;padding-left:18px;">
             <li><strong>第一层：</strong>DELF/TCF、Goethe/telc、TOPIK II 等写作/口语刚需考试。</li>
@@ -13057,9 +13381,10 @@
             <li><strong>地域优先：</strong>北美/东南亚做英语触达，欧洲以本地化考试关键词逐步扩展。</li>
           </ul>
         </div>
-        <div class="lp-card" style="border-left:4px solid var(--gold);">
+        <div class="lp-card lp-distribution-cost">
           <h3><i class="ri-funds-line lp-icon-flat lp-gold"></i> 获客成本拆分（内部目标）</h3>
-          <div style="overflow-x:auto;">
+          <p class="lp-table-scroll-hint">左右滑动查看完整表格 →</p>
+          <div class="lp-distribution-table-wrap">
             <table style="font-size:.85rem;">
               <thead>
                 <tr>
@@ -13100,7 +13425,7 @@
         </div>
       </div>
 
-      <div class="lp-grid3" style="margin-top:24px;">
+      <div class="lp-grid3 lp-distribution-advantages">
         <div class="lp-card" style="border-top:4px solid var(--accent);">
           <h3><i class="ri-translate-2 lp-icon-flat lp-accent"></i> 产品适配优势</h3>
           <p style="font-size:.9rem;color:var(--sub);line-height:1.8;">
@@ -13121,7 +13446,7 @@
         </div>
       </div>
 
-      <div class="lp-warn-box" style="margin-top:24px;">
+      <div class="lp-warn-box lp-distribution-conclusion">
         <strong><i class="ri-error-warning-line lp-icon-flat"></i> 海外执行风险：</strong>
         海外 CAC 对语种、地区和考试季节高度敏感，需先用 $1,000-$3,000 小额预算按语种验证关键词、落地页和免费评测转化，再决定是否扩大投放。上表为目标经营模型，不代表已验证结果。
       </div>
@@ -13136,9 +13461,9 @@
 
     <!-- CORE EXECUTION PLAN -->
     <section class="core-plan-intro" id="core-execution-plan">
-      <span class="core-plan-eyebrow">CORE EXECUTION PLAN · 01—07</span>
+      <span class="core-plan-eyebrow">CORE EXECUTION PLAN · 01—04</span>
       <h2>项目核心执行计划</h2>
-      <p>从产品方法论与多语种落地，到资金预算、团队分工、主体合作、股权安排及投资人权责；集中回答项目如何落地、如何用钱、由谁负责，以及如何建立长期治理机制。</p>
+      <p>项目预计于 2026 年 9 月启动。从产品方法论与多语种落地，到资金预算和团队分工；集中回答项目如何落地、如何控制投入、由谁负责，以及如何按阶段完成产品交付。</p>
     </section>
 
     <!-- HERO -->
@@ -13410,7 +13735,7 @@
               <div class="estimate-head">
                 <div class="estimate-title">
                   <b>正常估算</b>
-                  <span>Start 2026.9.7 · Deadline 2027.5.11</span>
+                  <span>预计启动 2026.9.7 · Deadline 2027.5.11</span>
                 </div>
                 <div class="estimate-meta">
                   <span class="good">预计完成 · 2027.4.10</span>
@@ -13632,7 +13957,7 @@
               <div class="estimate-head">
                 <div class="estimate-title">
                   <b>保守估算</b>
-                  <span>Start 2026.9.7 · Deadline 2027.5.11</span>
+                  <span>预计启动 2026.9.7 · Deadline 2027.5.11</span>
                 </div>
                 <div class="estimate-meta">
                   <span class="risk">预计完成 · 2027.5.30</span>
@@ -13887,7 +14212,7 @@
         </div>
 
         <div class="budget-subhead">
-          <div class="zh">3.1.1–3.1.8 预算推导</div>
+          <div class="zh">3.1 核心预算推导</div>
           <div class="en">Traceable base and adjustment logic</div>
           <div class="tag">Methodology</div>
         </div>
@@ -13958,122 +14283,6 @@
           </div>
         </div>
 
-        <div class="budget-subhead">
-          <div class="zh">3.1.5 青岛主体 · 各语种产品内容</div>
-          <div class="en">Language content cost model · RMB</div>
-          <div class="tag">Content</div>
-        </div>
-
-        <div class="budget-table-wrap">
-          <table class="budget-table">
-            <thead>
-              <tr>
-                <th>语种</th>
-                <th>市场基数</th>
-                <th>创始团队折减</th>
-                <th>教育资源折减</th>
-                <th>最终成本</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>英语版本</td>
-                <td class="amount">20,000</td>
-                <td class="factor">团队项目管理折减 30%</td>
-                <td class="factor">教育资源配合折减 30%–40%</td>
-                <td class="amount">6,000–8,000</td>
-              </tr>
-              <tr>
-                <td>日语版本</td>
-                <td class="amount">30,000</td>
-                <td class="factor">团队项目管理折减 30%</td>
-                <td class="factor">教育资源折减 30%–40%</td>
-                <td class="amount">9,000–12,000</td>
-              </tr>
-              <tr>
-                <td>法语版本</td>
-                <td class="amount">30,000</td>
-                <td class="factor">直接研发陈故宫与管理折减 50%</td>
-                <td class="factor">教育资源折减 30%–40%</td>
-                <td class="amount">2,500–3,000</td>
-              </tr>
-              <tr>
-                <td>德语版本</td>
-                <td class="amount">30,000</td>
-                <td class="factor">管理效率折减 15%</td>
-                <td class="factor">教育资源折减 35%–45%</td>
-                <td class="amount">12,000–15,000</td>
-              </tr>
-              <tr>
-                <td>中文版本</td>
-                <td class="amount">20,000</td>
-                <td class="factor">团队管理效率折减 15%</td>
-                <td class="factor">教育资源折减 35%–45%</td>
-                <td class="amount">8,000–10,000</td>
-              </tr>
-              <tr class="section-row">
-                <td colspan="4">五语种产品内容年度合计</td>
-                <td class="amount">37,500–48,000</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="budget-subhead">
-          <div class="zh">3.2 第一年预算总览</div>
-          <div class="en">First-year budget overview</div>
-          <div class="tag">Year 1</div>
-        </div>
-
-        <div class="budget-table-wrap">
-          <table class="budget-table">
-            <thead>
-              <tr>
-                <th>主体</th>
-                <th>项目</th>
-                <th>预算</th>
-                <th>备注</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section-row"><td colspan="4">青岛主体（年度，人民币）</td></tr>
-              <tr><td>青岛</td><td>研发</td><td class="amount">150,000–250,000</td><td class="factor">国内合规适配、AI 服务商联调、多版本并行维护</td></tr>
-              <tr><td>青岛</td><td>产品内容（五语种）</td><td class="amount">37,500–48,000</td><td class="factor">按语种基数与折减因子推导</td></tr>
-              <tr><td>青岛</td><td>AI 研发与算力</td><td class="amount">100,000–150,000</td><td class="factor">五语种、多模型、分批迭代训练与部署</td></tr>
-              <tr><td>青岛</td><td>UI/UX 设计</td><td class="amount">50,000–80,000</td><td class="factor">产品网站、APP、官网品牌视觉规范</td></tr>
-              <tr><td>青岛</td><td>C 端市场与品牌</td><td class="amount">100,000</td><td class="factor">面向 C 端获客与品牌建设</td></tr>
-              <tr><td>青岛</td><td>运营人力 / 财务 / 法务 / 硬件</td><td class="amount">53,000–55,000</td><td class="factor">人力行政 10,000；财务 5,000；法务 3,000–5,000；硬件 35,000</td></tr>
-              <tr><td>青岛</td><td>合规剩余项</td><td class="amount">46,200</td><td class="factor">等保测评、软著登记、商标、域名 / SSL、应急预留</td></tr>
-              <tr class="section-row"><td colspan="2">青岛合计</td><td class="amount">约 53.7 万–72.9 万</td><td></td></tr>
-              <tr class="section-row"><td colspan="4">香港主体（年度，港币 → 人民币）</td></tr>
-              <tr><td>香港</td><td>研发</td><td class="amount">275,000–330,000 HKD</td><td class="factor">核心功能开发、产品迭代、AI 模型接口对接与优化</td></tr>
-              <tr><td>香港</td><td>AI 算力</td><td class="amount">120,000 HKD</td><td class="factor">推理调用、训练流水线、openClaw 集成维护与数据处理</td></tr>
-              <tr><td>香港</td><td>产品运营</td><td class="amount">30,000 HKD</td><td class="factor">服务器 / CDN、第三方接口、数据存储</td></tr>
-              <tr><td>香港</td><td>公司运营合规</td><td class="amount">30,000–40,000 HKD</td><td class="factor">人事行政、财务审计、法律咨询、硬件设备折旧</td></tr>
-              <tr><td>香港</td><td>C 端市场</td><td class="amount">100,000 HKD</td><td class="factor">15 万基数经 30% 折减后取整</td></tr>
-              <tr><td>香港</td><td>合规剩余项</td><td class="amount">16,800 HKD</td><td class="factor">年度审计、周年申报、注册地址、商标注册等</td></tr>
-              <tr class="section-row"><td colspan="2">香港合计</td><td class="amount">571,800–636,800 HKD</td><td class="factor">按汇率 0.92 折合人民币约 52.6 万–58.6 万</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="budget-totals">
-          <div class="budget-total cn">
-            <div class="name">青岛主体</div>
-            <div class="sum">53.7–72.9 万</div>
-            <div class="desc">年度，人民币；含研发、内容、AI、设计、运营与合规补充。</div>
-          </div>
-          <div class="budget-total hk">
-            <div class="name">香港主体</div>
-            <div class="sum">52.6–58.6 万</div>
-            <div class="desc">由 571,800–636,800 港币按 0.92 折算成人民币。</div>
-          </div>
-          <div class="budget-total all">
-            <div class="name">双主体合计</div>
-            <div class="sum">106.3–131.5 万</div>
-            <div class="desc">前 12 个月总预算，作为第一年资金使用计划口径。</div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -14195,200 +14404,6 @@
               <li>当 DAU 超过 5,000 或营收模型初步验证时，引入半全职或全职技术人员；下一轮融资完成后，正式组建市场负责人和运营负责人在内的核心管理层。</li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- EQUITY -->
-    <div class="method-block">
-      <div class="section-label" id="ch5">
-        <span class="num">第五章</span>
-        <span class="ttl">合作模式与股权架构</span>
-        <span class="en">Operating model · equity structure · financing</span>
-        <span class="rule"></span>
-      </div>
-
-      <div class="method-panel">
-        <div class="method-lede">
-          <div class="method-lede-card engine">
-            <h3>双主体并行架构</h3>
-            <p>项目采用青岛-香港双主体并行架构：青岛公司专注中国大陆市场的产品运营与商业化；香港公司覆盖港澳台及海外市场。两家公司财务独立、数据不互通，共享同一套项目管理、产品体系与技术路径。</p>
-            <div class="share-pills">
-              <span>financially independent</span>
-              <span>shared product stack</span>
-              <span>shared technical path</span>
-            </div>
-          </div>
-          <div class="method-lede-card market">
-            <h3>天使轮融资总额</h3>
-            <p>本次天使轮融资计划总额 <b>150 万人民币</b>，由教育行业资深高管领投，北京及青岛投资人跟投，资金将用于 12-14 个月产品研发周期的第一年核心投入，包括五语种产品上线、AI 模型训练迭代、用户冷启动及品牌建设。</p>
-            <div class="share-pills">
-              <span>150万 RMB</span>
-              <span>12-14 months runway</span>
-              <span>year-one core spend</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="budget-subhead">
-          <div class="zh">5.1 双主体注册资本与融资结构</div>
-          <div class="en">Registered capital and angel allocation</div>
-          <div class="tag">Structure</div>
-        </div>
-
-        <div class="budget-table-wrap">
-          <table class="budget-table">
-            <thead>
-              <tr>
-                <th>主体</th>
-                <th>注册资本</th>
-                <th>股权安排</th>
-                <th>法定代表人 / 备注</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>青岛主体</td><td>100 万人民币</td><td>创始人持有 75%–80%</td><td>创始人股份由信任亲属代持并担任法定代表人</td></tr>
-              <tr><td>香港主体</td><td>25 万人民币等值港币</td><td>创始人持有 75%–80%</td><td>创始人本人担任法定代表人和登记股东</td></tr>
-              <tr class="section-row"><td colspan="4">本轮天使融资结构</td></tr>
-              <tr><td>总额</td><td>150 万人民币</td><td>两个主体各释放 15%–20% 股权</td><td>资金均等注入两家公司，各约 75 万</td></tr>
-              <tr><td>投资人身份</td><td colspan="3">以自然人身份直接入股两个主体，持股比例在两家公司间对等</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="budget-subhead">
-          <div class="zh">5.2 天使投资人构成</div>
-          <div class="en">Angel investor mix</div>
-          <div class="tag">Investors</div>
-        </div>
-
-        <div class="method-grid">
-          <div class="method-card">
-            <h4>教育集团高管（领投）</h4>
-            <ul>
-              <li>以个人名义投资，承担战略资源导入角色，为本轮最大份额出资方。</li>
-            </ul>
-          </div>
-          <div class="method-card">
-            <h4>北京投资人</h4>
-            <ul>
-              <li>以自然人身份入股，投资额以 40–60 万人民币为限，参与两个主体的对等持股。</li>
-            </ul>
-          </div>
-          <div class="method-card">
-            <h4>青岛财务投资人</h4>
-            <ul>
-              <li>认购 20 万人民币，分别注入青岛与香港主体，补充早期资金与本地资源。</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- GOVERNANCE -->
-    <div class="method-block">
-      <div class="section-label" id="ch6">
-        <span class="num">第六章</span>
-        <span class="ttl">治理机制与长期激励</span>
-        <span class="en">Governance · advisory equity · option reserve</span>
-        <span class="rule"></span>
-      </div>
-
-      <div class="method-panel">
-
-        <div class="budget-subhead">
-          <div class="zh">6.1 技术顾问持股与期权池</div>
-          <div class="en">Advisory equity and option reserve</div>
-          <div class="tag">Governance</div>
-        </div>
-
-        <div class="method-grid">
-          <div class="method-card">
-            <h4>Jonny 持股安排</h4>
-            <ul>
-              <li>Jonny（华裔澳洲籍）担任项目技术顾问及海外技术相关负责人，仅在香港主体持有 2%–3% 股份，初期以技术出资形式认定。</li>
-              <li>后续根据项目里程碑完成度与个人业绩贡献，持股比例最高可调增至不超过 5%，调增机制由创始人与投资人共同评定。</li>
-            </ul>
-          </div>
-          <div class="method-card">
-            <h4>期权池</h4>
-            <ul>
-              <li>两个主体各预留 5% 期权池，用于后续核心团队成员激励。</li>
-              <li>本轮不实际发放，待 A 轮前根据团队扩展情况启动分配。</li>
-            </ul>
-          </div>
-          <div class="method-card">
-            <h4>治理原则</h4>
-            <ul>
-              <li>双主体财务独立、数据不互通，技术与产品路径统一管理，融资与股权安排优先服务产品交付和市场推进。</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- INVESTOR RIGHTS -->
-    <div class="method-block">
-      <div class="section-label" id="ch7">
-        <span class="num">第七章</span>
-        <span class="ttl">投资人权益与创始人义务</span>
-        <span class="en">Investor rights · founder obligations</span>
-        <span class="rule"></span>
-      </div>
-
-      <div class="method-panel">
-        <div class="budget-subhead">
-          <div class="zh">7.1 投资人权益</div>
-          <div class="en">Investor rights</div>
-          <div class="tag">Rights</div>
-        </div>
-
-        <div class="method-grid">
-          <div class="method-card">
-            <h4>信息披露权</h4>
-            <ul>
-              <li>创始人按季度向全体投资人提供财务摘要与业务进展报告，包括用户数据、营收情况及关键里程碑完成状态。</li>
-              <li>重大事项（单笔超过 15 万元的非常规支出、关联交易、新一轮融资条款）事前通报。</li>
-              <li>投资人有权查阅经审计的年度财务报表。</li>
-            </ul>
-          </div>
-          <div class="method-card">
-            <h4>优先权</h4>
-            <ul>
-              <li>本轮投资人享有后续融资轮次的按比例优先认购权（Pro-rata Right）。</li>
-              <li>如公司发生控制权变更或资产出售，投资人享有与创始人同等条件的共同出售权（Tag-along Right）。</li>
-            </ul>
-          </div>
-          <div class="method-card">
-            <h4>反稀释保护</h4>
-            <ul>
-              <li>如后续轮次估值低于本轮估值（即出现 Down Round），本轮投资人持股比例按加权平均法进行反稀释调整。</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="budget-subhead">
-          <div class="zh">7.2 创始人义务</div>
-          <div class="en">Founder obligations</div>
-          <div class="tag">Duties</div>
-        </div>
-
-        <div class="method-lede">
-          <div class="method-lede-card engine">
-            <h3>投入与竞业承诺</h3>
-            <p>创始人将本项目作为核心事业方向，按照第四章所述三阶段精力分配模型持续推进产品交付、公司运营与市场拓展。创始人承诺在项目存续期间不从事与本项目直接竞争的业务活动。</p>
-          </div>
-          <div class="method-lede-card market">
-            <h3>关联交易与里程碑通报</h3>
-            <p>涉及双主体之间或与创始人关联方之间的交易，遵循公允定价原则，并事前向投资人披露。如项目核心里程碑出现超过 30 个工作日的重大延迟，创始人应主动向投资人通报原因及调整方案。</p>
-          </div>
-        </div>
-
-        <div class="method-card">
-          <h4>创始人股权锁定</h4>
-          <ul>
-            <li>创始人持有的股权自公司设立之日起锁定 36 个月，在第 12、24、36 个月各解锁三分之一。</li>
-          </ul>
         </div>
       </div>
     </div>
